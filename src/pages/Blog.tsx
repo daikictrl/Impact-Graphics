@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { useScrollAnimation } from '../hooks/useScrollAnimation'
-import { Clock, ArrowRight } from 'lucide-react'
-import { Dialog, DialogContent, DialogTitle } from '../components/ui/dialog'
+import { Clock, ArrowRight, X } from 'lucide-react'
+import { Dialog, DialogContent, DialogTitle, DialogClose } from '../components/ui/dialog'
 
 /* ─── Page Hero ─── */
 function PageHero() {
@@ -314,12 +314,16 @@ function BlogGrid() {
 
       {selectedPost && (
         <Dialog open={!!selectedPost} onOpenChange={(open) => !open && setSelectedPost(null)}>
-          <DialogContent className="max-w-3xl max-h-[85vh] overflow-y-auto p-0 rounded-2xl border-none shadow-2xl bg-white focus:outline-none focus-visible:outline-none">
-            <div className="relative">
+          <DialogContent 
+            showCloseButton={false}
+            className="max-w-4xl w-[95vw] md:w-full h-[90vh] md:h-[80vh] p-0 rounded-3xl border-none shadow-2xl bg-white focus:outline-none overflow-hidden flex flex-col md:grid md:grid-cols-12"
+          >
+            {/* Left Column - Image */}
+            <div className="h-48 sm:h-64 md:h-full md:col-span-5 relative shrink-0">
               <img
                 src={selectedPost.image}
                 alt={selectedPost.title}
-                className="w-full aspect-[21/9] object-cover"
+                className="w-full h-full object-cover"
               />
               <div className="absolute top-4 left-4">
                 <span className={`${categoryColors[selectedPost.category] || 'bg-[#1E40AF]'} text-white text-xs font-medium px-3 py-1.5 rounded-full shadow-md`}>
@@ -328,8 +332,14 @@ function BlogGrid() {
               </div>
             </div>
             
-            <div className="px-6 py-6 sm:px-8 sm:py-8">
-              <div className="flex items-center gap-4 text-xs text-[#64748B] mb-4 font-medium">
+            {/* Right Column - Content */}
+            <div className="flex-1 md:col-span-7 p-6 sm:p-8 md:p-10 overflow-y-auto flex flex-col relative min-h-0">
+              {/* Custom circular close button */}
+              <DialogClose className="absolute top-4 right-4 z-50 p-2 bg-white hover:bg-[#F1F5F9] text-[#64748B] hover:text-[#0F172A] rounded-full border border-[#E2E8F0] shadow-sm transition-colors focus:outline-none focus:ring-2 focus:ring-[#1E40AF]">
+                <X size={16} />
+              </DialogClose>
+
+              <div className="flex items-center gap-4 text-xs text-[#64748B] mb-4 font-medium mt-2">
                 <span>{selectedPost.date}</span>
                 <span>•</span>
                 <span className="flex items-center gap-1">
