@@ -38,7 +38,7 @@ export default function Navbar() {
       }`}
       style={{ height: 72 }}
     >
-      <div className="max-w-[1200px] mx-auto px-6 lg:px-12 h-full flex items-center justify-between">
+      <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-12 h-full flex items-center justify-between">
         {/* Logo */}
         <Link to="/" className="flex items-center h-full py-3.5">
           <img
@@ -86,8 +86,9 @@ export default function Navbar() {
 
         {/* Mobile Toggle */}
         <button
-          className="lg:hidden text-[#0F172A]"
+          className="lg:hidden text-[#0F172A] p-2 hover:bg-slate-100 rounded-lg transition-colors focus:outline-none"
           onClick={() => setMobileOpen(!mobileOpen)}
+          aria-label="Toggle navigation menu"
         >
           {mobileOpen ? <X size={24} /> : <Menu size={24} />}
         </button>

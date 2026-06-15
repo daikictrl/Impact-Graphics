@@ -6,8 +6,10 @@ export default function WhatsAppButton() {
       href="https://wa.me/237655316506"
       target="_blank"
       rel="noopener noreferrer"
-      className="fixed bottom-6 right-6 z-40 w-14 h-14 rounded-full bg-[#25D366] flex items-center justify-center text-white shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
+      className="fixed z-40 w-14 h-14 rounded-full bg-[#25D366] flex items-center justify-center text-white shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
       style={{
+        bottom: 'calc(1.5rem + env(safe-area-inset-bottom))',
+        right: 'calc(1.5rem + env(safe-area-inset-right))',
         animation: 'pulse-whatsapp 2s infinite',
       }}
     >
