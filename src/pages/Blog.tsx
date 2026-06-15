@@ -333,37 +333,40 @@ function BlogGrid() {
             </div>
             
             {/* Right Column - Content */}
-            <div className="flex-grow flex-shrink md:col-span-7 p-8 sm:p-10 md:p-12 lg:p-14 overflow-y-auto flex flex-col relative min-h-0">
+            <div className="flex-grow flex-shrink md:col-span-7 flex flex-col relative min-h-0 h-full">
               {/* Custom circular close button */}
               <DialogClose className="absolute top-5 right-5 z-50 p-2 bg-white hover:bg-[#F1F5F9] text-[#64748B] hover:text-[#0F172A] rounded-full border border-[#E2E8F0] shadow-sm transition-colors focus:outline-none focus:ring-2 focus:ring-[#1E40AF]">
                 <X size={16} />
               </DialogClose>
 
-              {/* Category label - Bird style */}
-              <span className="text-[11px] font-extrabold tracking-widest text-[#1E40AF] uppercase mb-2 self-start">
-                {selectedPost.category} Article
-              </span>
-              
-              {/* Title */}
-              <DialogTitle className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-[#0F172A] leading-tight font-sans tracking-tight mb-4 pr-8">
-                {selectedPost.title}
-              </DialogTitle>
-
-              {/* Date & Reading time */}
-              <div className="flex items-center gap-4 text-xs sm:text-sm text-[#64748B] font-medium mb-6">
-                <span>{selectedPost.date}</span>
-                <span>•</span>
-                <span className="flex items-center gap-1">
-                  <Clock size={14} /> {selectedPost.readTime}
+              {/* Scrollable container for text content */}
+              <div className="flex-grow overflow-y-auto p-8 sm:p-10 md:p-12 lg:p-14">
+                {/* Category label - Bird style */}
+                <span className="text-[11px] font-extrabold tracking-widest text-[#1E40AF] uppercase mb-2 self-start block">
+                  {selectedPost.category} Article
                 </span>
-              </div>
+                
+                {/* Title */}
+                <DialogTitle className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-[#0F172A] leading-tight font-sans tracking-tight mb-4 pr-10">
+                  {selectedPost.title}
+                </DialogTitle>
 
-              {/* Separator line */}
-              <hr className="border-[#E2E8F0] mb-8" />
-              
-              {/* Body content */}
-              <div className="mt-2 text-[#475569] leading-relaxed">
-                {selectedPost.content}
+                {/* Date & Reading time */}
+                <div className="flex items-center gap-4 text-xs sm:text-sm text-[#64748B] font-medium mb-6">
+                  <span>{selectedPost.date}</span>
+                  <span>•</span>
+                  <span className="flex items-center gap-1">
+                    <Clock size={14} /> {selectedPost.readTime}
+                  </span>
+                </div>
+
+                {/* Separator line */}
+                <hr className="border-[#E2E8F0] mb-8" />
+                
+                {/* Body content */}
+                <div className="mt-2 text-[#475569] leading-relaxed">
+                  {selectedPost.content}
+                </div>
               </div>
             </div>
           </DialogContent>
