@@ -15,7 +15,7 @@ export function useScrollAnimation(options?: IntersectionObserverInit) {
           observer.unobserve(el)
         }
       },
-      { threshold: 0.15, ...options }
+      { threshold: 0.02, ...options }
     )
 
     observer.observe(el)
