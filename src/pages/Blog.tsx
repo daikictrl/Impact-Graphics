@@ -316,7 +316,7 @@ function BlogGrid() {
         <Dialog open={!!selectedPost} onOpenChange={(open) => !open && setSelectedPost(null)}>
           <DialogContent 
             showCloseButton={false}
-            className="sm:max-w-[95vw] md:max-w-[90vw] lg:max-w-5xl xl:max-w-6xl w-full h-[90vh] md:h-[85vh] p-0 rounded-3xl border-none shadow-2xl bg-white focus:outline-none overflow-hidden flex flex-col md:grid md:grid-cols-12"
+            className="sm:max-w-[95vw] md:max-w-[90vw] lg:max-w-5xl xl:max-w-5xl w-full h-[90vh] md:h-[85vh] p-0 rounded-3xl border-none shadow-2xl bg-white focus:outline-none overflow-hidden flex flex-col md:grid md:grid-cols-12"
           >
             {/* Left Column - Image */}
             <div className="h-48 sm:h-64 md:h-full md:col-span-5 relative shrink-0">
