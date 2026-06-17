@@ -7,7 +7,7 @@ function PageHero() {
     <section
       className="pt-[72px] relative flex items-center justify-center bg-cover bg-center"
       style={{
-        backgroundImage: 'linear-gradient(135deg, rgba(30, 64, 175, 0.85) 0%, rgba(13, 148, 136, 0.85) 100%), url("/images/hero_portfolio.jpg")',
+        backgroundImage: 'linear-gradient(135deg, rgba(29, 53, 87, 0.85) 0%, rgba(69, 123, 157, 0.85) 100%), url("/images/hero_portfolio.jpg")',
         minHeight: '45vh',
       }}
     >
@@ -45,12 +45,12 @@ const projects = [
 ]
 
 const categoryColors: Record<string, string> = {
-  Branding: 'bg-[#1E40AF]',
-  Printing: 'bg-[#F97316]',
-  Signage: 'bg-[#0D9488]',
-  'Digital Design': 'bg-[#8B5CF6]',
-  Photography: 'bg-[#EC4899]',
-  Events: 'bg-[#F59E0B]',
+  Branding: 'bg-[#457B9D] text-white',
+  Printing: 'bg-[#E63946] text-white',
+  Signage: 'bg-[#1D3557] text-white',
+  'Digital Design': 'bg-[#A8DADC] text-[#1D3557]',
+  Photography: 'bg-[#4E6178] text-white',
+  Events: 'bg-[#457B9D] text-white',
 }
 
 function PortfolioGallery() {
@@ -72,8 +72,8 @@ function PortfolioGallery() {
               onClick={() => setActiveCategory(cat)}
               className={`px-5 py-2 rounded-full text-sm font-medium transition-all duration-200 ${
                 activeCategory === cat
-                  ? 'bg-[#1E40AF] text-white shadow-md'
-                  : 'bg-[#F8FAFC] text-[#475569] hover:bg-[#E2E8F0]'
+                  ? 'bg-[#457B9D] text-white shadow-md'
+                  : 'bg-[#F0F7F9] text-[#4E6178] hover:bg-[#D0E1E6]'
               }`}
             >
               {cat}
@@ -102,8 +102,8 @@ function PortfolioGallery() {
                   loading="lazy"
                 />
                 {/* Hover Overlay */}
-                <div className="absolute inset-0 bg-[#1E40AF]/85 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center p-6 text-center">
-                  <span className={`${categoryColors[project.category] || 'bg-[#1E40AF]'} text-white text-xs font-medium px-3 py-1 rounded-full mb-3`}>
+                <div className="absolute inset-0 bg-[#1D3557]/85 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center p-6 text-center">
+                  <span className={`${categoryColors[project.category] || 'bg-[#457B9D] text-white'} text-xs font-medium px-3 py-1 rounded-full mb-3`}>
                     {project.category}
                   </span>
                   <h3 className="text-white font-semibold text-lg">

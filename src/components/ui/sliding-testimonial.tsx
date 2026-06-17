@@ -2,34 +2,40 @@ import { Star, Quote } from 'lucide-react'
 
 const testimonials = [
   {
-    name: "Marie Nkono",
+    name: "Herman Buns",
     profession: "CEO, Elegant Homes Ltd",
     description: "IMPACT GRAPHICS transformed our brand completely. From logo design to our entire marketing collateral, the quality and creativity exceeded our expectations. Highly recommended!",
+    image: "/images/Herman Buns.jpeg",
   },
   {
-    name: "Jean-Pierre Fouda",
+    name: "Wilfried Bradd",
     profession: "Founder, TechStart Cameroon",
     description: "Working with this team has been incredible. They understood our vision from day one and delivered a brand identity that truly represents who we are. Professional, creative, and timely.",
+    image: "/images/Wilfried Bradd.jpeg",
   },
   {
-    name: "Amina Diallo",
+    name: "Mr. Nature",
     profession: "Marketing Director, AfriEvents",
     description: "The printing quality is outstanding and the turnaround time is impressive. Our event branding was the talk of the conference. Thank you for making us look so good!",
+    image: "/images/Mr. Nature.jpeg",
   },
   {
-    name: "Samuel Eto'o",
+    name: "Joseph Elyse'",
     profession: "Director, Sports Academy Douala",
     description: "For our large format banners and vehicle wraps, they are our go-to agency. Fast delivery, extreme professionalism, and output that is durable and visually striking.",
+    image: "/images/Joseph Elyse'.jpeg",
   },
   {
-    name: "Christian Tchakounté",
+    name: "Mme. Sharifa",
     profession: "Manager, Bafoussam Tech Hub",
     description: "They built our brand guidelines and stationery from scratch. They are highly skilled, patient with revisions, and deliver top-notch international quality design work.",
+    image: "/images/Mme. Sharifa.jpeg",
   },
   {
-    name: "Dr. Helen Ngo",
+    name: "Mme. Kajal Moussa",
     profession: "Founder, Care & Cure Clinic Akwa",
     description: "From our corporate brochure printing to logo refinements, IMPACT GRAPHICS handled everything seamlessly. Their Douala team combines global design trends with excellent local execution.",
+    image: "/images/Mme. Kajal Moussa.jpeg",
   },
 ]
 
@@ -74,8 +80,20 @@ const FUITestimonialWithSlide = () => {
 
                   <div className="border-t border-[#E2E8F0] pt-5 w-full flex items-center justify-between mt-auto">
                     <div className="flex items-center gap-3">
-                      <div className="w-11 h-11 rounded-full bg-gradient-to-br from-[#1E40AF] to-[#0D9488] flex items-center justify-center text-white font-bold text-sm shadow-sm">
-                        {testimonial.name.split(' ').map(n => n[0]).join('')}
+                      <div className="w-11 h-11 rounded-full bg-gradient-to-br from-[#1E40AF] to-[#0D9488] flex items-center justify-center text-white font-bold text-sm shadow-sm shrink-0 overflow-hidden relative">
+                        {testimonial.image ? (
+                          <img
+                            src={testimonial.image}
+                            alt={testimonial.name}
+                            className="w-full h-full object-cover absolute inset-0 z-10"
+                            onError={(e) => {
+                              e.currentTarget.style.display = 'none';
+                            }}
+                          />
+                        ) : null}
+                        <span className="relative z-0">
+                          {testimonial.name.split(' ').map(n => n[0]).join('')}
+                        </span>
                       </div>
                       <div className="flex flex-col">
                         <h5 className="text-sm sm:text-base font-bold text-[#0F172A]">{testimonial.name}</h5>

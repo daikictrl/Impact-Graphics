@@ -17,7 +17,7 @@ function PageHero() {
     <section
       className="pt-[72px] relative flex items-center justify-center bg-cover bg-center"
       style={{
-        backgroundImage: 'linear-gradient(135deg, rgba(30, 64, 175, 0.85) 0%, rgba(13, 148, 136, 0.85) 100%), url("/images/hero_about-us.jpg")',
+        backgroundImage: 'linear-gradient(135deg, rgba(29, 53, 87, 0.85) 0%, rgba(69, 123, 157, 0.85) 100%), url("/images/hero_about-us.jpg")',
         minHeight: '50vh',
       }}
     >
@@ -55,16 +55,16 @@ function CompanyStory() {
               isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-16'
             }`}
           >
-            <span className="text-[13px] font-semibold uppercase tracking-[0.08em] text-[#F97316] mb-3 block">
+            <span className="text-[13px] font-semibold uppercase tracking-[0.08em] text-[#E63946] mb-3 block">
               Our Story
             </span>
             <h2
-              className="text-3xl sm:text-4xl font-bold text-[#0F172A] mb-6"
+              className="text-3xl sm:text-4xl font-bold text-[#1D3557] mb-6"
               style={{ fontFamily: 'Poppins, sans-serif' }}
             >
               Bridging Creative Design & Business Branding
             </h2>
-            <p className="text-[#475569] leading-relaxed mb-8">
+            <p className="text-[#4E6178] leading-relaxed mb-8">
               IMPACT GRAPHICS & SON SARL was founded in Douala, Cameroon with a simple
               but powerful vision: to bridge the gap between creative design and practical
               business branding. We believe every business, regardless of size, deserves
@@ -73,13 +73,13 @@ function CompanyStory() {
             </p>
 
             {/* Timeline */}
-            <div className="relative pl-8 border-l-2 border-[#E2E8F0] space-y-8">
+            <div className="relative pl-8 border-l-2 border-[#D0E1E6] space-y-8">
               {milestones.map((m) => (
                 <div key={m.year} className="relative">
-                  <span className="absolute -left-[41px] w-5 h-5 rounded-full bg-[#1E40AF] border-4 border-white shadow" />
-                  <span className="text-sm font-bold text-[#1E40AF]">{m.year}</span>
-                  <h4 className="font-semibold text-[#0F172A] mt-1">{m.title}</h4>
-                  <p className="text-sm text-[#475569] mt-1">{m.desc}</p>
+                  <span className="absolute -left-[41px] w-5 h-5 rounded-full bg-[#457B9D] border-4 border-white shadow" />
+                  <span className="text-sm font-bold text-[#457B9D]">{m.year}</span>
+                  <h4 className="font-semibold text-[#1D3557] mt-1">{m.title}</h4>
+                  <p className="text-sm text-[#4E6178] mt-1">{m.desc}</p>
                 </div>
               ))}
             </div>
@@ -106,40 +106,40 @@ function MissionVision() {
   const { ref, isVisible } = useScrollAnimation()
 
   return (
-    <section ref={ref} className="bg-[#F8FAFC] py-24">
+    <section ref={ref} className="bg-[#F0F7F9] py-24">
       <div className="max-w-[1200px] mx-auto px-6 lg:px-12">
         <div
           className={`grid md:grid-cols-2 gap-8 transition-all duration-700 ${
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
           }`}
         >
-          <div className="bg-white rounded-2xl p-10 border-l-4 border-[#1E40AF] shadow-sm">
-            <div className="w-12 h-12 rounded-xl bg-[#1E40AF]/10 flex items-center justify-center text-[#1E40AF] mb-5">
+          <div className="bg-white rounded-2xl p-10 border-l-4 border-[#457B9D] shadow-sm">
+            <div className="w-12 h-12 rounded-xl bg-[#457B9D]/10 flex items-center justify-center text-[#457B9D] mb-5">
               <Target size={24} />
             </div>
             <h3
-              className="text-2xl font-bold text-[#0F172A] mb-4"
+              className="text-2xl font-bold text-[#1D3557] mb-4"
               style={{ fontFamily: 'Poppins, sans-serif' }}
             >
               Our Mission
             </h3>
-            <p className="text-[#475569] leading-relaxed">
+            <p className="text-[#4E6178] leading-relaxed">
               To empower businesses and individuals with impactful visual identities and
               high-quality print and design solutions that drive growth, build recognition,
               and create lasting impressions in their markets.
             </p>
           </div>
-          <div className="bg-white rounded-2xl p-10 border-l-4 border-[#0D9488] shadow-sm">
-            <div className="w-12 h-12 rounded-xl bg-[#0D9488]/10 flex items-center justify-center text-[#0D9488] mb-5">
+          <div className="bg-white rounded-2xl p-10 border-l-4 border-[#E63946] shadow-sm">
+            <div className="w-12 h-12 rounded-xl bg-[#E63946]/10 flex items-center justify-center text-[#E63946] mb-5">
               <Eye size={24} />
             </div>
             <h3
-              className="text-2xl font-bold text-[#0F172A] mb-4"
+              className="text-2xl font-bold text-[#1D3557] mb-4"
               style={{ fontFamily: 'Poppins, sans-serif' }}
             >
               Our Vision
             </h3>
-            <p className="text-[#475569] leading-relaxed">
+            <p className="text-[#4E6178] leading-relaxed">
               &ldquo;We Design Your Brand. We Build Your Presence.&rdquo; To become the leading
               creative branding and visual communication agency in Central Africa, recognized
               for innovation, quality, and transformative brand experiences.
@@ -155,12 +155,12 @@ function MissionVision() {
 function CoreValues() {
   const { ref, isVisible } = useScrollAnimation()
   const values = [
-    { icon: <Lightbulb size={28} />, title: 'Creativity', desc: 'We push boundaries and think outside the box to deliver unique solutions.', color: 'border-t-[#F97316]' },
-    { icon: <Award size={28} />, title: 'Quality', desc: 'Excellence is our standard. Every project receives meticulous attention.', color: 'border-t-[#1E40AF]' },
-    { icon: <Shield size={28} />, title: 'Integrity', desc: 'Honest communication, transparent pricing, and ethical business practices.', color: 'border-t-[#0D9488]' },
-    { icon: <Heart size={28} />, title: 'Client-Centered', desc: 'Your success is our success. We listen, adapt, and deliver beyond expectations.', color: 'border-t-[#8B5CF6]' },
-    { icon: <Rocket size={28} />, title: 'Innovation', desc: 'We embrace new technologies and trends to keep your brand ahead.', color: 'border-t-[#EC4899]' },
-    { icon: <Users size={28} />, title: 'Professionalism', desc: 'Timely delivery, clear communication, and respectful collaboration always.', color: 'border-t-[#F59E0B]' },
+    { icon: <Lightbulb size={28} />, title: 'Creativity', desc: 'We push boundaries and think outside the box to deliver unique solutions.', color: 'border-t-[#E63946]' },
+    { icon: <Award size={28} />, title: 'Quality', desc: 'Excellence is our standard. Every project receives meticulous attention.', color: 'border-t-[#457B9D]' },
+    { icon: <Shield size={28} />, title: 'Integrity', desc: 'Honest communication, transparent pricing, and ethical business practices.', color: 'border-t-[#1D3557]' },
+    { icon: <Heart size={28} />, title: 'Client-Centered', desc: 'Your success is our success. We listen, adapt, and deliver beyond expectations.', color: 'border-t-[#A8DADC]' },
+    { icon: <Rocket size={28} />, title: 'Innovation', desc: 'We embrace new technologies and trends to keep your brand ahead.', color: 'border-t-[#E63946]' },
+    { icon: <Users size={28} />, title: 'Professionalism', desc: 'Timely delivery, clear communication, and respectful collaboration always.', color: 'border-t-[#457B9D]' },
   ]
 
   return (
@@ -168,7 +168,7 @@ function CoreValues() {
       <div className="max-w-[1200px] mx-auto px-6 lg:px-12">
         <div className="text-center mb-14">
           <h2
-            className="text-3xl sm:text-4xl font-bold text-[#0F172A]"
+            className="text-3xl sm:text-4xl font-bold text-[#1D3557]"
             style={{ fontFamily: 'Poppins, sans-serif' }}
           >
             Our Core Values
@@ -185,11 +185,11 @@ function CoreValues() {
               className={`bg-white rounded-2xl p-8 shadow-sm border border-gray-100 ${v.color} border-t-4 hover:shadow-md hover:-translate-y-1 transition-all duration-300`}
               style={{ transitionDelay: `${i * 0.08}s` }}
             >
-              <div className="text-[#1E40AF] mb-4 hover:rotate-[10deg] transition-transform duration-300">
+              <div className="text-[#457B9D] mb-4 hover:rotate-[10deg] transition-transform duration-300">
                 {v.icon}
               </div>
-              <h3 className="font-bold text-[#0F172A] mb-2">{v.title}</h3>
-              <p className="text-sm text-[#475569] leading-relaxed">{v.desc}</p>
+              <h3 className="font-bold text-[#1D3557] mb-2">{v.title}</h3>
+              <p className="text-sm text-[#4E6178] leading-relaxed">{v.desc}</p>
             </div>
           ))}
         </div>
@@ -209,10 +209,10 @@ function WhyClientsChoose() {
   ]
 
   return (
-    <section ref={ref} className="bg-[#F8FAFC] py-24">
+    <section ref={ref} className="bg-[#F0F7F9] py-24">
       <div className="max-w-[1200px] mx-auto px-6 lg:px-12">
         <h2
-          className="text-3xl sm:text-4xl font-bold text-[#0F172A] mb-14 text-center"
+          className="text-3xl sm:text-4xl font-bold text-[#1D3557] mb-14 text-center"
           style={{ fontFamily: 'Poppins, sans-serif' }}
         >
           Why Clients Choose Us
@@ -234,7 +234,7 @@ function WhyClientsChoose() {
               isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-16'
             }`}
           >
-            <p className="text-[#475569] leading-relaxed mb-8">
+            <p className="text-[#4E6178] leading-relaxed mb-8">
               At IMPACT GRAPHICS, we don&apos;t just create designs &mdash; we build brand
               experiences that resonate with your audience. Our team combines creative
               excellence with strategic thinking to deliver solutions that drive real
@@ -244,14 +244,14 @@ function WhyClientsChoose() {
             <div className="grid grid-cols-2 gap-4">
               {stats.map((stat) => (
                 <div key={stat.label} className="bg-white rounded-xl p-5 text-center shadow-sm">
-                  <div className="text-2xl sm:text-3xl font-bold text-[#1E40AF]">
+                  <div className="text-2xl sm:text-3xl font-bold text-[#457B9D]">
                     {isVisible ? (
                       <CountUp end={stat.value} duration={2} suffix={stat.suffix} />
                     ) : (
                       `0${stat.suffix}`
                     )}
                   </div>
-                  <p className="text-xs text-[#475569] mt-1">{stat.label}</p>
+                  <p className="text-xs text-[#4E6178] mt-1">{stat.label}</p>
                 </div>
               ))}
             </div>

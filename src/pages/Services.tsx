@@ -26,7 +26,7 @@ function PageHero() {
     <section
       className="pt-[72px] relative flex items-center justify-center bg-cover bg-center"
       style={{
-        backgroundImage: 'linear-gradient(135deg, rgba(30, 64, 175, 0.85) 0%, rgba(13, 148, 136, 0.85) 100%), url("/images/hero_our-services.png")',
+        backgroundImage: 'linear-gradient(135deg, rgba(29, 53, 87, 0.85) 0%, rgba(69, 123, 157, 0.85) 100%), url("/images/hero_our-services.png")',
         minHeight: '45vh',
       }}
     >
@@ -166,7 +166,7 @@ function ServicesGrid() {
           {services.map((service, i) => (
             <div
               key={service.title}
-              className="group border border-[#E2E8F0] rounded-2xl overflow-hidden hover:shadow-lg hover:border-[#1E40AF]/30 transition-all duration-300"
+              className="group border border-[#D0E1E6] rounded-2xl overflow-hidden hover:shadow-lg hover:border-[#457B9D]/30 transition-all duration-300"
               style={{ transitionDelay: `${i * 0.06}s` }}
             >
               <div className="overflow-hidden">
@@ -179,25 +179,25 @@ function ServicesGrid() {
               </div>
               <div className="p-6">
                 <div className="flex items-center gap-3 mb-3">
-                  <span className="text-[#1E40AF]">{service.icon}</span>
-                  <h3 className="font-semibold text-[#0F172A]">{service.title}</h3>
+                  <span className="text-[#457B9D]">{service.icon}</span>
+                  <h3 className="font-semibold text-[#1D3557]">{service.title}</h3>
                 </div>
-                <p className="text-sm text-[#475569] leading-relaxed mb-4">
+                <p className="text-sm text-[#4E6178] leading-relaxed mb-4">
                   {service.desc}
                 </p>
                 <div className="flex items-center justify-between">
-                  <div className="flex items-center gap-2 text-xs text-[#475569]">
+                  <div className="flex items-center gap-2 text-xs text-[#4E6178]">
                     <Clock size={12} />
                     <span>{service.turnaround}</span>
                   </div>
                 </div>
-                <div className="flex items-center justify-between mt-4 pt-4 border-t border-[#E2E8F0]">
-                  <span className="text-sm font-semibold text-[#0F172A]">
+                <div className="flex items-center justify-between mt-4 pt-4 border-t border-[#D0E1E6]">
+                  <span className="text-sm font-semibold text-[#1D3557]">
                     From XAF {service.price}
                   </span>
                   <Link
                     to="/booking"
-                    className="text-sm font-medium text-[#1E40AF] flex items-center gap-1 hover:gap-2 transition-all duration-200"
+                    className="text-sm font-medium text-[#457B9D] flex items-center gap-1 hover:gap-2 transition-all duration-200"
                   >
                     Request Quote <ArrowRight size={14} />
                   </Link>
@@ -228,7 +228,7 @@ function PricingOverview() {
         'Print-Ready Files',
       ],
       highlighted: false,
-      btnClass: 'border-2 border-[#1E40AF] text-[#1E40AF] hover:bg-[#1E40AF] hover:text-white',
+      btnClass: 'border-2 border-[#457B9D] text-[#457B9D] hover:bg-[#457B9D] hover:text-white',
     },
     {
       name: 'Professional',
@@ -244,7 +244,7 @@ function PricingOverview() {
         'Priority Support',
       ],
       highlighted: true,
-      btnClass: 'bg-[#1E40AF] text-white hover:bg-[#1E3A8A]',
+      btnClass: 'bg-[#457B9D] text-white hover:bg-[#1D3557]',
     },
     {
       name: 'Enterprise',
@@ -260,21 +260,21 @@ function PricingOverview() {
         'Dedicated Account Manager',
       ],
       highlighted: false,
-      btnClass: 'border-2 border-[#1E40AF] text-[#1E40AF] hover:bg-[#1E40AF] hover:text-white',
+      btnClass: 'border-2 border-[#457B9D] text-[#457B9D] hover:bg-[#457B9D] hover:text-white',
     },
   ]
 
   return (
-    <section ref={ref} className="bg-[#F8FAFC] py-24">
+    <section ref={ref} className="bg-[#F0F7F9] py-24">
       <div className="max-w-[1200px] mx-auto px-6 lg:px-12">
         <div className="text-center mb-14">
           <h2
-            className="text-3xl sm:text-4xl font-bold text-[#0F172A] mb-4"
+            className="text-3xl sm:text-4xl font-bold text-[#1D3557] mb-4"
             style={{ fontFamily: 'Poppins, sans-serif' }}
           >
             Branding Packages
           </h2>
-          <p className="text-[#475569]">Choose the package that fits your business needs</p>
+          <p className="text-[#4E6178]">Choose the package that fits your business needs</p>
         </div>
         <div
           className={`grid md:grid-cols-3 gap-8 transition-all duration-700 ${
@@ -286,24 +286,24 @@ function PricingOverview() {
               key={tier.name}
               className={`rounded-2xl p-8 ${
                 tier.highlighted
-                  ? 'bg-white border-2 border-[#1E40AF] shadow-lg relative'
-                  : 'bg-white border border-[#E2E8F0]'
+                  ? 'bg-white border-2 border-[#457B9D] shadow-lg relative'
+                  : 'bg-white border border-[#D0E1E6]'
               }`}
             >
               {tier.highlighted && (
-                <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-[#1E40AF] text-white text-xs font-semibold px-4 py-1 rounded-full">
+                <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-[#457B9D] text-white text-xs font-semibold px-4 py-1 rounded-full">
                   Most Popular
                 </span>
               )}
-              <h3 className="font-semibold text-[#0F172A] text-lg">{tier.name}</h3>
+              <h3 className="font-semibold text-[#1D3557] text-lg">{tier.name}</h3>
               <div className="mt-4 mb-2">
-                <span className="text-4xl font-bold text-[#0F172A]">XAF {tier.price}</span>
-                <span className="text-sm text-[#475569] ml-1">{tier.period}</span>
+                <span className="text-4xl font-bold text-[#1D3557]">XAF {tier.price}</span>
+                <span className="text-sm text-[#4E6178] ml-1">{tier.period}</span>
               </div>
-              <p className="text-sm text-[#475569] mb-6">{tier.description}</p>
+              <p className="text-sm text-[#4E6178] mb-6">{tier.description}</p>
               <ul className="space-y-3 mb-8">
                 {tier.features.map((f) => (
-                  <li key={f} className="flex items-start gap-2.5 text-sm text-[#475569]">
+                  <li key={f} className="flex items-start gap-2.5 text-sm text-[#4E6178]">
                     <Check size={16} className="text-[#10B981] mt-0.5 shrink-0" />
                     {f}
                   </li>
@@ -338,12 +338,12 @@ function ProcessSection() {
       <div className="max-w-[1200px] mx-auto px-6 lg:px-12">
         <div className="text-center mb-14">
           <h2
-            className="text-3xl sm:text-4xl font-bold text-[#0F172A] mb-4"
+            className="text-3xl sm:text-4xl font-bold text-[#1D3557] mb-4"
             style={{ fontFamily: 'Poppins, sans-serif' }}
           >
             Our Process
           </h2>
-          <p className="text-[#475569]">How we bring your brand vision to life</p>
+          <p className="text-[#4E6178]">How we bring your brand vision to life</p>
         </div>
         <div
           className={`grid sm:grid-cols-2 lg:grid-cols-4 gap-8 transition-all duration-700 ${
@@ -353,13 +353,13 @@ function ProcessSection() {
           {steps.map((step, i) => (
             <div key={step.num} className="relative text-center">
               {i < steps.length - 1 && (
-                <div className="hidden lg:block absolute top-8 left-[60%] right-0 border-t-2 border-dashed border-[#E2E8F0]" />
+                <div className="hidden lg:block absolute top-8 left-[60%] right-0 border-t-2 border-dashed border-[#D0E1E6]" />
               )}
-              <div className="w-16 h-16 rounded-full bg-gradient-to-br from-[#1E40AF] to-[#0D9488] flex items-center justify-center text-white font-bold text-lg mx-auto mb-5 shadow-lg">
+              <div className="w-16 h-16 rounded-full bg-gradient-to-br from-[#1D3557] to-[#457B9D] flex items-center justify-center text-white font-bold text-lg mx-auto mb-5 shadow-lg">
                 {step.num}
               </div>
-              <h3 className="font-semibold text-[#0F172A] mb-2">{step.title}</h3>
-              <p className="text-sm text-[#475569] leading-relaxed">{step.desc}</p>
+              <h3 className="font-semibold text-[#1D3557] mb-2">{step.title}</h3>
+              <p className="text-sm text-[#4E6178] leading-relaxed">{step.desc}</p>
             </div>
           ))}
         </div>
@@ -374,7 +374,7 @@ function CTASection() {
     <section
       className="py-20 text-center"
       style={{
-        background: 'linear-gradient(135deg, #1E40AF 0%, #0D9488 100%)',
+        background: 'linear-gradient(135deg, #1D3557 0%, #457B9D 100%)',
       }}
     >
       <div className="max-w-[600px] mx-auto px-6">
@@ -390,7 +390,7 @@ function CTASection() {
         </p>
         <Link
           to="/booking"
-          className="inline-block bg-white text-[#1E40AF] px-8 py-3.5 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-200"
+          className="inline-block bg-white text-[#457B9D] px-8 py-3.5 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-200"
         >
           Book a Free Consultation
         </Link>

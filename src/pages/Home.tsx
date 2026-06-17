@@ -139,29 +139,29 @@ function HeroSection() {
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Text Column */}
           <div className="space-y-8">
-            <span className="inline-block text-[13px] font-semibold uppercase tracking-[0.08em] text-[#F97316]">
+            <span className="inline-block text-[13px] font-semibold uppercase tracking-[0.08em] text-[#E63946]">
               Creative Branding Agency
             </span>
             <h1
-              className="text-4xl sm:text-5xl lg:text-[52px] font-bold text-[#0F172A] leading-[1.1]"
+              className="text-4xl sm:text-5xl lg:text-[52px] font-bold text-[#1D3557] leading-[1.1]"
               style={{ fontFamily: 'Poppins, sans-serif' }}
             >
               We Design Your Brand. We Build Your Presence.
             </h1>
-            <p className="text-lg text-[#475569] max-w-[520px] leading-relaxed">
+            <p className="text-lg text-[#4E6178] max-w-[520px] leading-relaxed">
               Creative branding, premium printing, digital marketing, and visual
               solutions that help businesses stand out and grow.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link
                 to="/portfolio"
-                className="bg-[#1E40AF] text-white px-8 py-3.5 rounded-lg font-medium hover:bg-[#1E3A8A] transition-colors duration-200"
+                className="bg-[#457B9D] text-white px-8 py-3.5 rounded-lg font-medium hover:bg-[#1D3557] transition-colors duration-200"
               >
                 View Portfolio
               </Link>
               <Link
                 to="/booking"
-                className="border-2 border-[#1E40AF] text-[#1E40AF] px-8 py-3.5 rounded-lg font-medium hover:bg-[#1E40AF] hover:text-white transition-colors duration-200"
+                className="border-2 border-[#457B9D] text-[#457B9D] px-8 py-3.5 rounded-lg font-medium hover:bg-[#457B9D] hover:text-white transition-colors duration-200"
               >
                 Request A Quote
               </Link>
@@ -174,8 +174,8 @@ function HeroSection() {
                 { icon: <Users size={20} />, label: '200+ Clients' },
                 { icon: <Star size={20} />, label: '98% Satisfaction' },
               ].map((badge) => (
-                <div key={badge.label} className="flex items-center gap-2 text-[#475569]">
-                  <span className="text-[#1E40AF]">{badge.icon}</span>
+                <div key={badge.label} className="flex items-center gap-2 text-[#4E6178]">
+                  <span className="text-[#457B9D]">{badge.icon}</span>
                   <span className="text-sm font-medium">{badge.label}</span>
                 </div>
               ))}
@@ -209,7 +209,7 @@ function HeroSection() {
         </div>
       </div>
       {/* Bottom gradient */}
-      <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-b from-transparent to-[#F8FAFC]" />
+      <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-b from-transparent to-[#F0F7F9]" />
     </section>
   )
 }
@@ -225,7 +225,7 @@ function StatsSection() {
   ]
 
   return (
-    <section ref={ref} className="bg-[#F8FAFC] py-20">
+    <section ref={ref} className="bg-[#F0F7F9] py-20">
       <div className="max-w-[1200px] mx-auto px-6 lg:px-12">
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
           {stats.map((stat) => (
@@ -233,14 +233,14 @@ function StatsSection() {
               key={stat.label}
               className="bg-white rounded-2xl p-8 sm:p-10 text-center shadow-sm border border-gray-100"
             >
-              <div className="text-4xl sm:text-5xl font-bold mb-2 bg-gradient-to-r from-[#1E40AF] to-[#0D9488] bg-clip-text text-transparent">
+              <div className="text-4xl sm:text-5xl font-bold mb-2 bg-gradient-to-r from-[#1D3557] to-[#457B9D] bg-clip-text text-transparent">
                 {isVisible ? (
                   <CountUp end={stat.value} duration={2.5} suffix={stat.suffix} />
                 ) : (
                   `0${stat.suffix}`
                 )}
               </div>
-              <p className="text-sm text-[#475569]">{stat.label}</p>
+              <p className="text-sm text-[#4E6178]">{stat.label}</p>
             </div>
           ))}
         </div>
@@ -272,13 +272,13 @@ function ServicesSection() {
       <div className="max-w-[1200px] mx-auto px-6 lg:px-12">
         <div className="text-center mb-14">
           <h2
-            className="text-3xl sm:text-4xl font-bold text-[#0F172A] mb-4"
+            className="text-3xl sm:text-4xl font-bold text-[#1D3557] mb-4"
             style={{ fontFamily: 'Poppins, sans-serif' }}
           >
             Our Services
           </h2>
-          <div className="w-10 h-[3px] bg-[#F97316] mx-auto mb-4" />
-          <p className="text-[#475569] max-w-xl mx-auto">
+          <div className="w-10 h-[3px] bg-[#E63946] mx-auto mb-4" />
+          <p className="text-[#4E6178] max-w-xl mx-auto">
             Everything your brand needs to stand out, grow, and succeed
           </p>
         </div>
@@ -291,17 +291,17 @@ function ServicesSection() {
             <Link
               to="/services"
               key={service.title}
-              className="group border border-[#E2E8F0] rounded-2xl p-8 hover:shadow-[0_12px_40px_rgba(30,64,175,0.12)] hover:border-[#1E40AF] transition-all duration-300"
+              className="group border border-[#D0E1E6] rounded-2xl p-8 hover:shadow-[0_12px_40px_rgba(29,53,87,0.12)] hover:border-[#457B9D] transition-all duration-300"
               style={{ transitionDelay: `${i * 0.05}s` }}
             >
-              <div className="text-[#1E40AF] mb-4 group-hover:scale-110 transition-transform duration-300">
+              <div className="text-[#457B9D] mb-4 group-hover:scale-110 transition-transform duration-300">
                 {service.icon}
               </div>
-              <h3 className="font-semibold text-[#0F172A] mb-2">{service.title}</h3>
-              <p className="text-sm text-[#475569] leading-relaxed mb-4">
+              <h3 className="font-semibold text-[#1D3557] mb-2">{service.title}</h3>
+              <p className="text-sm text-[#4E6178] leading-relaxed mb-4">
                 {service.desc}
               </p>
-              <span className="text-sm font-medium text-[#1E40AF] flex items-center gap-1 group-hover:gap-2 transition-all duration-200">
+              <span className="text-sm font-medium text-[#457B9D] flex items-center gap-1 group-hover:gap-2 transition-all duration-200">
                 Learn More <ArrowRight size={14} />
               </span>
             </Link>
@@ -310,7 +310,7 @@ function ServicesSection() {
         <div className="text-center mt-10">
           <Link
             to="/services"
-            className="inline-flex items-center gap-2 text-[#1E40AF] font-medium hover:underline"
+            className="inline-flex items-center gap-2 text-[#457B9D] font-medium hover:underline"
           >
             View All 13 Services <ArrowRight size={16} />
           </Link>
@@ -350,10 +350,10 @@ function WhyChooseSection() {
   ]
 
   return (
-    <section className="bg-[#F8FAFC] py-24">
+    <section className="bg-[#F0F7F9] py-24">
       <div className="max-w-[1200px] mx-auto px-6 lg:px-12">
         <h2
-          className="text-3xl sm:text-4xl font-bold text-[#0F172A] mb-14"
+          className="text-3xl sm:text-4xl font-bold text-[#1D3557] mb-14"
           style={{ fontFamily: 'Poppins, sans-serif' }}
         >
           Why Choose IMPACT GRAPHICS
@@ -382,12 +382,12 @@ function WhyChooseSection() {
                 </div>
                 <div className={isReversed ? 'lg:order-1' : ''}>
                   <h3
-                    className="text-2xl font-bold text-[#0F172A] mb-4"
+                    className="text-2xl font-bold text-[#1D3557] mb-4"
                     style={{ fontFamily: 'Poppins, sans-serif' }}
                   >
                     {feature.title}
                   </h3>
-                  <p className="text-[#475569] leading-relaxed mb-6">
+                  <p className="text-[#4E6178] leading-relaxed mb-6">
                     {feature.desc}
                   </p>
                   <ul className="space-y-3">
@@ -396,7 +396,7 @@ function WhyChooseSection() {
                         <span className="w-5 h-5 rounded-full bg-[#10B981]/10 flex items-center justify-center shrink-0">
                           <Check size={12} className="text-[#10B981]" />
                         </span>
-                        <span className="text-sm text-[#475569]">{point}</span>
+                        <span className="text-sm text-[#4E6178]">{point}</span>
                       </li>
                     ))}
                   </ul>
@@ -423,10 +423,10 @@ function PortfolioPreview() {
   ]
 
   const categoryColors: Record<string, string> = {
-    Branding: 'bg-[#1E40AF]',
-    Printing: 'bg-[#F97316]',
-    Signage: 'bg-[#0D9488]',
-    'Digital Design': 'bg-[#8B5CF6]',
+    Branding: 'bg-[#457B9D] text-white',
+    Printing: 'bg-[#E63946] text-white',
+    Signage: 'bg-[#1D3557] text-white',
+    'Digital Design': 'bg-[#A8DADC] text-[#1D3557]',
   }
 
   return (
@@ -435,16 +435,16 @@ function PortfolioPreview() {
         <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-12 gap-4">
           <div>
             <h2
-              className="text-3xl sm:text-4xl font-bold text-[#0F172A] mb-2"
+              className="text-3xl sm:text-4xl font-bold text-[#1D3557] mb-2"
               style={{ fontFamily: 'Poppins, sans-serif' }}
             >
               Our Portfolio
             </h2>
-            <p className="text-[#475569]">Showcasing our best creative work</p>
+            <p className="text-[#4E6178]">Showcasing our best creative work</p>
           </div>
           <Link
             to="/portfolio"
-            className="text-[#1E40AF] font-medium flex items-center gap-1 hover:underline"
+            className="text-[#457B9D] font-medium flex items-center gap-1 hover:underline"
           >
             View All Projects <ArrowRight size={16} />
           </Link>
@@ -470,7 +470,7 @@ function PortfolioPreview() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-5">
                   <div>
-                    <span className={`${categoryColors[project.category] || 'bg-[#1E40AF]'} text-white text-xs font-medium px-2.5 py-1 rounded-full mb-2 inline-block`}>
+                    <span className={`${categoryColors[project.category] || 'bg-[#457B9D] text-white'} text-xs font-medium px-2.5 py-1 rounded-full mb-2 inline-block`}>
                       {project.category}
                     </span>
                     <p className="text-white font-medium text-sm">{project.title}</p>
@@ -478,10 +478,10 @@ function PortfolioPreview() {
                 </div>
               </div>
               <div className="p-4 bg-white">
-                <span className={`${categoryColors[project.category] || 'bg-[#1E40AF]'} text-white text-xs font-medium px-2.5 py-1 rounded-full`}>
+                <span className={`${categoryColors[project.category] || 'bg-[#457B9D] text-white'} text-xs font-medium px-2.5 py-1 rounded-full`}>
                   {project.category}
                 </span>
-                <h3 className="font-medium text-[#0F172A] mt-2">{project.title}</h3>
+                <h3 className="font-medium text-[#1D3557] mt-2">{project.title}</h3>
               </div>
             </Link>
           ))}
@@ -505,27 +505,27 @@ function PromotionsSection() {
       desc: 'Premium business cards at unbeatable prices. Valid for all card types and finishes.',
       code: 'CARDS10',
       expires: 'June 30, 2026',
-      bg: 'bg-[#FFF7ED]',
-      border: 'border-[#F97316]',
-      btn: 'bg-[#F97316] hover:bg-[#EA580C]',
+      bg: 'bg-[#FDF2F3]',
+      border: 'border-[#E63946]',
+      btn: 'bg-[#E63946] hover:bg-[#C92A3A]',
     },
     {
       title: 'Free Brand Consultation',
       desc: 'Book a 30-minute brand strategy session with our experts absolutely free.',
       code: 'FREECONSL',
       expires: 'July 15, 2026',
-      bg: 'bg-[#DBEAFE]',
-      border: 'border-[#1E40AF]',
-      btn: 'bg-[#1E40AF] hover:bg-[#1E3A8A]',
+      bg: 'bg-[#F0F5FA]',
+      border: 'border-[#457B9D]',
+      btn: 'bg-[#457B9D] hover:bg-[#1D3557]',
     },
     {
       title: 'Referral Rewards Program',
       desc: 'Refer a friend and earn 15% off your next project when they book with us.',
       code: 'REFER15',
       expires: 'Ongoing',
-      bg: 'bg-[#CCFBF1]',
-      border: 'border-[#0D9488]',
-      btn: 'bg-[#0D9488] hover:bg-[#0F766E]',
+      bg: 'bg-[#F4FBFB]',
+      border: 'border-[#A8DADC]',
+      btn: 'bg-[#1D3557] hover:bg-[#457B9D]',
     },
   ]
 
@@ -534,7 +534,7 @@ function PromotionsSection() {
       <div className="max-w-[1200px] mx-auto px-6 lg:px-12">
         <div className="text-center mb-14">
           <h2
-            className="text-3xl sm:text-4xl font-bold text-[#0F172A]"
+            className="text-3xl sm:text-4xl font-bold text-[#1D3557]"
             style={{ fontFamily: 'Poppins, sans-serif' }}
           >
             Current Promotions
@@ -551,12 +551,12 @@ function PromotionsSection() {
               className={`${promo.bg} border-2 ${promo.border} rounded-2xl p-8 hover:scale-[1.02] hover:shadow-lg transition-all duration-300`}
               style={{ transitionDelay: `${i * 0.1}s` }}
             >
-              <h3 className="font-bold text-[#0F172A] text-lg mb-3">{promo.title}</h3>
-              <p className="text-[#475569] text-sm mb-4">{promo.desc}</p>
-              <div className="inline-block bg-white/80 px-3 py-1.5 rounded-lg text-xs font-mono font-semibold text-[#0F172A] mb-4">
+              <h3 className="font-bold text-[#1D3557] text-lg mb-3">{promo.title}</h3>
+              <p className="text-[#4E6178] text-sm mb-4">{promo.desc}</p>
+              <div className="inline-block bg-white/80 px-3 py-1.5 rounded-lg text-xs font-mono font-semibold text-[#1D3557] mb-4">
                 Code: {promo.code}
               </div>
-              <p className="text-xs text-[#475569] mb-5">Expires: {promo.expires}</p>
+              <p className="text-xs text-[#4E6178] mb-5">Expires: {promo.expires}</p>
               <Link
                 to="/booking"
                 className={`${promo.btn} text-white px-6 py-2.5 rounded-lg text-sm font-medium inline-block transition-colors duration-200`}
@@ -590,7 +590,7 @@ function NewsletterSection() {
   }
 
   return (
-    <section className="bg-[#0F172A] py-20">
+    <section className="bg-[#1D3557] py-20">
       <div className="max-w-[600px] mx-auto px-6 lg:px-12 text-center">
         <h2
           className="text-3xl sm:text-4xl font-bold text-white mb-4"
@@ -598,7 +598,7 @@ function NewsletterSection() {
         >
           Get Our Free Branding Checklist on WhatsApp
         </h2>
-        <p className="text-[#94A3B8] mb-8">
+        <p className="text-[#A8DADC] mb-8">
           Request the essential guide to building a brand that stands out, delivered straight to your WhatsApp
         </p>
         {submitted ? (
@@ -614,7 +614,7 @@ function NewsletterSection() {
               value={name}
               onChange={(e) => setName(e.target.value)}
               required
-              className="w-full px-4 py-3.5 rounded-lg bg-white/10 border border-white/20 text-white placeholder-white/50 focus:outline-none focus:border-[#F97316] focus:ring-2 focus:ring-[#F97316]/20"
+              className="w-full px-4 py-3.5 rounded-lg bg-white/10 border border-white/20 text-white placeholder-white/50 focus:outline-none focus:border-[#E63946] focus:ring-2 focus:ring-[#E63946]/20"
             />
             <input
               type="tel"
@@ -622,17 +622,17 @@ function NewsletterSection() {
               value={phone}
               onChange={(e) => setPhone(e.target.value)}
               required
-              className="w-full px-4 py-3.5 rounded-lg bg-white/10 border border-white/20 text-white placeholder-white/50 focus:outline-none focus:border-[#F97316] focus:ring-2 focus:ring-[#F97316]/20"
+              className="w-full px-4 py-3.5 rounded-lg bg-white/10 border border-white/20 text-white placeholder-white/50 focus:outline-none focus:border-[#E63946] focus:ring-2 focus:ring-[#E63946]/20"
             />
             <button
               type="submit"
-              className="w-full bg-[#F97316] text-white px-8 py-3.5 rounded-lg font-semibold hover:bg-[#EA580C] transition-colors duration-200"
+              className="w-full bg-[#E63946] text-white px-8 py-3.5 rounded-lg font-semibold hover:bg-[#C92A3A] transition-colors duration-200"
             >
               Get Checklist on WhatsApp
             </button>
           </form>
         )}
-        <p className="text-[#94A3B8] text-xs mt-4">
+        <p className="text-[#A8DADC] text-xs mt-4">
           Join 500+ business owners who&apos;ve improved their branding
         </p>
       </div>
@@ -646,7 +646,7 @@ function FinalCTA() {
     <section
       className="py-24 text-center"
       style={{
-        background: 'linear-gradient(135deg, #1E40AF 0%, #0D9488 100%)',
+        background: 'linear-gradient(135deg, #1D3557 0%, #457B9D 100%)',
       }}
     >
       <div className="max-w-[700px] mx-auto px-6 lg:px-12">
@@ -662,7 +662,7 @@ function FinalCTA() {
         <div className="flex flex-wrap justify-center gap-4">
           <Link
             to="/booking"
-            className="bg-white text-[#1E40AF] px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-200"
+            className="bg-white text-[#457B9D] px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-200"
           >
             Request a Quote
           </Link>
@@ -698,7 +698,7 @@ export default function Home() {
       <PortfolioPreview />
       <TestimonialsSection />
       <PromotionsSection />
-      {NewsletterSectionComponent ? <NewsletterSectionComponent /> : <div className="bg-[#0F172A] py-20" />}
+      {NewsletterSectionComponent ? <NewsletterSectionComponent /> : <div className="bg-[#1D3557] py-20" />}
       <FinalCTA />
     </>
   )
