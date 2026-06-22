@@ -1,0 +1,1095 @@
+
+================================================================================
+         IMPACT GRAPHICS & SON SARL — OFFICIAL WEBSITE PROJECT OVERVIEW
+================================================================================
+
+  Document Prepared For:    Mme. Kajal Moussa (Client)
+  Project Name:             IMPACT GRAPHICS & SON SARL — Company Website
+  Project Type:             Business / Branding Agency Website
+  Date Prepared:            June 22, 2026
+  Location:                 Akwa, Douala, Cameroon
+
+================================================================================
+                            TABLE OF CONTENTS
+================================================================================
+
+  1.  PROJECT SUMMARY
+  2.  WHAT THE WEBSITE DOES (IN PLAIN LANGUAGE)
+  3.  PAGES OF THE WEBSITE
+  4.  TECHNOLOGY STACK (TOOLS USED TO BUILD THE WEBSITE)
+  5.  WHY THESE TECHNOLOGIES WERE CHOSEN
+  6.  FILE & FOLDER STRUCTURE
+  7.  COLOR PALETTE & DESIGN CHOICES
+  8.  TYPOGRAPHY (FONTS)
+  9.  DESIGN STRUCTURE & LAYOUT
+  10. KEY FEATURES & FUNCTIONALITY
+  11. ANIMATIONS & INTERACTIVE ELEMENTS
+  12. WHATSAPP INTEGRATION
+  13. SEARCH ENGINE OPTIMIZATION (SEO)
+  14. RESPONSIVE DESIGN (MOBILE, TABLET, DESKTOP)
+  15. DEPLOYMENT & HOSTING
+  16. IMAGE ASSETS
+  17. REUSABLE UI COMPONENT LIBRARY
+  18. IMPORTANT NOTES
+  19. GLOSSARY OF TECHNICAL TERMS
+
+
+================================================================================
+  1. PROJECT SUMMARY
+================================================================================
+
+  This project is a fully custom-built, professional website designed for
+  IMPACT GRAPHICS & SON SARL — a creative branding and visual communication
+  agency based in Akwa, Douala, Cameroon.
+
+  The website serves as the company's digital storefront. It showcases the
+  agency's services (branding, printing, graphic design, photography, video
+  production, web design, and more), displays a portfolio of past work,
+  provides a way for potential clients to request quotes and book services,
+  features a blog with educational articles about branding, and offers
+  multiple ways for visitors to get in touch — including direct WhatsApp
+  integration.
+
+  The website was built using modern, industry-standard web technologies to
+  ensure it loads quickly, looks stunning on any device (phone, tablet, or
+  computer), and delivers a smooth, professional user experience that
+  reflects the quality of IMPACT GRAPHICS' work.
+
+  Company Tagline:  "We Design Your Brand. We Build Your Presence."
+  Company Phone:    +237 6 55 31 65 06
+  Company Email:    khadijenjoya03@gmail.com
+  Company Address:  Akwa, Douala, Cameroon
+
+
+================================================================================
+  2. WHAT THE WEBSITE DOES (IN PLAIN LANGUAGE)
+================================================================================
+
+  Imagine walking into a beautifully decorated showroom where everything is
+  laid out for you — the company's story, their services with pricing, photos
+  of their past work, articles to help you understand branding, and a simple
+  way to request a quote. That is exactly what this website does, but online.
+
+  When someone visits the website, they are greeted with a visually striking
+  homepage that immediately communicates what IMPACT GRAPHICS does. From
+  there, they can:
+
+    •  Learn about the company's history, mission, vision, and values
+    •  Browse all 13 services with descriptions, pricing, and turnaround times
+    •  View a filterable gallery of past creative projects
+    •  Read educational blog articles about branding and design
+    •  Book a service or request a quote (which sends directly to WhatsApp)
+    •  Contact the company via a form, phone, email, or social media
+    •  Click a floating WhatsApp button on any page for instant messaging
+
+  Everything is designed to convert a casual visitor into a paying client.
+
+
+================================================================================
+  3. PAGES OF THE WEBSITE
+================================================================================
+
+  The website contains 7 distinct pages, each serving a specific purpose:
+
+  ┌──────────────┬──────────────────────────────────────────────────────────┐
+  │ PAGE         │ PURPOSE                                                │
+  ├──────────────┼──────────────────────────────────────────────────────────┤
+  │ Home         │ The main landing page. Contains a hero banner with     │
+  │ (/)          │ company tagline, image collage, trust badges (10+      │
+  │              │ years, 500+ projects, etc.), animated statistics, a    │
+  │              │ services overview, "Why Choose Us" section with        │
+  │              │ images, portfolio preview, client testimonials          │
+  │              │ (sliding carousel), current promotions with codes,     │
+  │              │ a newsletter/WhatsApp sign-up, and a final call-to-    │
+  │              │ action section.                                        │
+  ├──────────────┼──────────────────────────────────────────────────────────┤
+  │ About        │ Tells the company's story with a visual timeline       │
+  │ (/about)     │ (founded 2014, expanded 2018, 500+ projects 2024).    │
+  │              │ Shows the mission and vision statements, 6 core        │
+  │              │ values (Creativity, Quality, Integrity, Client-        │
+  │              │ Centered, Innovation, Professionalism), and a "Why     │
+  │              │ Clients Choose Us" section with animated statistics.   │
+  ├──────────────┼──────────────────────────────────────────────────────────┤
+  │ Services     │ Displays all 13 services offered by the company,      │
+  │ (/services)  │ each with an image, description, starting price in    │
+  │              │ XAF, and turnaround time. Also includes 3 branding    │
+  │              │ pricing packages (Basic, Professional, Enterprise),   │
+  │              │ a visual 4-step process (Consultation → Design →      │
+  │              │ Production → Delivery), and a call-to-action for a    │
+  │              │ free consultation.                                     │
+  ├──────────────┼──────────────────────────────────────────────────────────┤
+  │ Portfolio    │ A gallery of 12 creative projects displayed in a      │
+  │ (/portfolio) │ masonry layout (mixed-height grid). Visitors can      │
+  │              │ filter projects by category: All, Branding, Printing, │
+  │              │ Signage, Digital Design, Photography, or Events.      │
+  │              │ Each project has a hover overlay with title and        │
+  │              │ category badge.                                        │
+  ├──────────────┼──────────────────────────────────────────────────────────┤
+  │ Booking      │ A service booking form where visitors enter their     │
+  │ (/booking)   │ name, phone, select a service, choose a budget range, │
+  │              │ set a deadline, and describe their project. On         │
+  │              │ submission, the form composes a WhatsApp message and   │
+  │              │ opens WhatsApp directly with all the details pre-      │
+  │              │ filled. Also shows contact info and response time.     │
+  ├──────────────┼──────────────────────────────────────────────────────────┤
+  │ Blog         │ Features 6 educational articles about branding,       │
+  │ (/blog)      │ printing, design strategy, and signage. Each article  │
+  │              │ shows a preview card with image, category, read time, │
+  │              │ and excerpt. Clicking "Read More" opens a beautiful    │
+  │              │ full-screen dialog/modal with the complete article     │
+  │              │ content — no page navigation needed.                   │
+  ├──────────────┼──────────────────────────────────────────────────────────┤
+  │ Contact      │ Displays full contact information (phone, email,      │
+  │ (/contact)   │ address, working hours), social media links           │
+  │              │ (Facebook, Instagram, LinkedIn, TikTok), a contact    │
+  │              │ form that sends messages via WhatsApp, and an         │
+  │              │ embedded Google Map showing the company location       │
+  │              │ in Akwa, Douala, Cameroon.                            │
+  └──────────────┴──────────────────────────────────────────────────────────┘
+
+  Additionally, on every single page, there is:
+    •  A navigation bar (header) at the top with the company logo and links
+    •  A footer at the bottom with quick links, services, contact info,
+       social media icons, and copyright
+    •  A floating WhatsApp button in the bottom-right corner
+
+
+================================================================================
+  4. TECHNOLOGY STACK (TOOLS USED TO BUILD THE WEBSITE)
+================================================================================
+
+  Think of the technology stack as the collection of tools a builder uses to
+  construct a house. Just as a builder needs specific tools for the foundation,
+  walls, plumbing, and painting, a website needs specific software tools for
+  its structure, appearance, logic, and deployment.
+
+  Here is every tool used in this project and what it does:
+
+  ┌───────────────────────────┬────────────────────────────────────────────┐
+  │ TOOL                      │ WHAT IT DOES                             │
+  ├───────────────────────────┼────────────────────────────────────────────┤
+  │ React (v19)               │ The main framework. It is the "engine"   │
+  │                           │ that powers the entire website. React     │
+  │                           │ lets us build the website as a collection │
+  │                           │ of reusable "building blocks" (called     │
+  │                           │ components) that snap together.           │
+  ├───────────────────────────┼────────────────────────────────────────────┤
+  │ TypeScript                │ A safer version of JavaScript (the        │
+  │                           │ programming language of the web). It      │
+  │                           │ catches errors before they happen, like   │
+  │                           │ a spellchecker for code.                  │
+  ├───────────────────────────┼────────────────────────────────────────────┤
+  │ Vite (v7)                 │ The "construction manager." It packages   │
+  │                           │ all the code together and runs a local    │
+  │                           │ test server during development. It is     │
+  │                           │ extremely fast.                           │
+  ├───────────────────────────┼────────────────────────────────────────────┤
+  │ Tailwind CSS (v3.4)       │ The "interior decorator." Instead of      │
+  │                           │ writing style rules in separate files,    │
+  │                           │ Tailwind provides small, descriptive      │
+  │                           │ labels (called utility classes) that      │
+  │                           │ style elements directly in the code.      │
+  │                           │ Example: "text-white" makes text white.   │
+  ├───────────────────────────┼────────────────────────────────────────────┤
+  │ shadcn/ui                 │ A library of 50+ pre-built, beautifully  │
+  │                           │ designed interface components (buttons,   │
+  │                           │ dialogs, forms, tabs, etc.) that look     │
+  │                           │ professional out of the box.              │
+  ├───────────────────────────┼────────────────────────────────────────────┤
+  │ Radix UI                  │ The invisible foundation under shadcn/ui. │
+  │                           │ It handles accessibility (making the site │
+  │                           │ usable for people with disabilities) and  │
+  │                           │ complex behaviors like dropdown menus     │
+  │                           │ and dialog pop-ups.                       │
+  ├───────────────────────────┼────────────────────────────────────────────┤
+  │ React Router (v7)         │ The "traffic director." It handles        │
+  │                           │ navigation between pages without the      │
+  │                           │ browser needing to reload the entire      │
+  │                           │ page, making transitions feel instant.    │
+  ├───────────────────────────┼────────────────────────────────────────────┤
+  │ Lucide React              │ A collection of 1,000+ clean, modern      │
+  │                           │ icons used throughout the site (phone,    │
+  │                           │ mail, camera, star, arrow, etc.).         │
+  ├───────────────────────────┼────────────────────────────────────────────┤
+  │ React CountUp             │ Animates numbers from 0 to their final    │
+  │                           │ value (e.g., "0 → 500+" for projects      │
+  │                           │ completed), creating an engaging visual   │
+  │                           │ effect in the statistics sections.        │
+  ├───────────────────────────┼────────────────────────────────────────────┤
+  │ Google Fonts              │ Provides the custom fonts (Inter and      │
+  │  (Inter & Poppins)        │ Poppins) that give the website its        │
+  │                           │ clean, modern, professional appearance.   │
+  ├───────────────────────────┼────────────────────────────────────────────┤
+  │ PostCSS & Autoprefixer    │ Post-processing tools that automatically  │
+  │                           │ ensure the website's styling works        │
+  │                           │ correctly across all web browsers         │
+  │                           │ (Chrome, Safari, Firefox, Edge, etc.).    │
+  ├───────────────────────────┼────────────────────────────────────────────┤
+  │ ESLint                    │ A code quality checker that enforces      │
+  │                           │ coding standards and catches potential    │
+  │                           │ bugs during development.                  │
+  ├───────────────────────────┼────────────────────────────────────────────┤
+  │ Vercel                    │ The hosting platform where the website    │
+  │                           │ lives on the internet. Vercel is fast,    │
+  │                           │ reliable, and used by major companies     │
+  │                           │ worldwide.                                │
+  ├───────────────────────────┼────────────────────────────────────────────┤
+  │ Node.js (v20)             │ The behind-the-scenes runtime that        │
+  │                           │ powers the development tools. Think of    │
+  │                           │ it as the electricity that runs all the   │
+  │                           │ other tools.                              │
+  └───────────────────────────┴────────────────────────────────────────────┘
+
+
+================================================================================
+  5. WHY THESE TECHNOLOGIES WERE CHOSEN
+================================================================================
+
+  Every technology was chosen for a specific reason. Here is the logic:
+
+  REACT — was chosen because it is the world's most popular framework for
+  building websites. It is maintained by Meta (Facebook) and used by
+  companies like Netflix, Airbnb, and Instagram. React makes it easy to
+  build complex, interactive websites that are fast and maintainable. Its
+  "component-based" approach means parts of the website (like the navbar,
+  footer, service cards) are built once and reused everywhere, saving
+  development time and ensuring consistency.
+
+  TYPESCRIPT — was chosen over plain JavaScript because it adds a safety
+  net. When building a large website with many files, it is easy to make
+  mistakes (like sending a number where text is expected). TypeScript
+  catches these mistakes automatically before the website even runs,
+  reducing bugs and making the code more reliable and easier to maintain
+  in the future.
+
+  VITE — was chosen over older tools (like Webpack) because it is
+  dramatically faster. During development, changes appear on screen
+  almost instantly (under 100 milliseconds). When building the final
+  version for the internet, Vite produces highly optimized, compact
+  files that load quickly for visitors.
+
+  TAILWIND CSS — was chosen because it speeds up design work enormously.
+  Instead of switching between code files and style files, the developer
+  styles everything directly in the same file. This means design changes
+  that would normally take hours take minutes. The final website also
+  only includes the styles it actually uses, resulting in a very small
+  file size (fast loading).
+
+  SHADCN/UI — was chosen to provide professionally designed interface
+  elements. Rather than designing every button, dialog, and form from
+  scratch, shadcn/ui provides beautiful, accessible components that
+  follow modern design standards. This saved significant development
+  time while ensuring the website looks polished and premium.
+
+  VERCEL — was chosen for hosting because it is purpose-built for React
+  websites. It provides automatic HTTPS security, a global content
+  delivery network (meaning the website loads fast no matter where in
+  the world a visitor is), and zero-configuration deployment. It is
+  also used by companies like The Washington Post, Uber, and Nike.
+
+
+================================================================================
+  6. FILE & FOLDER STRUCTURE
+================================================================================
+
+  The project is organized into clearly named folders. Think of it like a
+  well-organized filing cabinet where every drawer has a label:
+
+  KAJAL/                              ← The project root (main folder)
+  │
+  ├── index.html                      ← The single HTML entry point (the
+  │                                      "front door" of the website)
+  │
+  ├── package.json                    ← Lists all the tools and libraries
+  │                                      used in the project (like a
+  │                                      recipe's ingredient list)
+  │
+  ├── vite.config.ts                  ← Configuration for the Vite build
+  │                                      tool (development server settings)
+  │
+  ├── tailwind.config.js              ← Configuration for Tailwind CSS
+  │                                      (custom colors, animations, etc.)
+  │
+  ├── postcss.config.js               ← Configuration for CSS processing
+  │
+  ├── tsconfig.json                   ← TypeScript configuration files
+  ├── tsconfig.app.json                  (tells TypeScript how to check
+  ├── tsconfig.node.json                  the code for errors)
+  │
+  ├── eslint.config.js                ← Code quality checking rules
+  │
+  ├── components.json                 ← Configuration for the shadcn/ui
+  │                                      component library
+  │
+  ├── vercel.json                     ← Deployment settings for Vercel
+  │                                      hosting (URL routing rules)
+  │
+  ├── public/                         ← PUBLIC ASSETS FOLDER
+  │   └── images/                     ← All images used on the website
+  │       ├── logo.png                   (53 images total including logo,
+  │       ├── hero-collage-1.jpg          hero images, service photos,
+  │       ├── service-branding.jpg        portfolio items, blog images,
+  │       ├── portfolio-*.jpg             team/testimonial photos, and
+  │       ├── blog-*.jpg                  "why choose us" images)
+  │       └── ... (53 images total)
+  │
+  ├── src/                            ← SOURCE CODE FOLDER (the heart of
+  │   │                                  the website)
+  │   │
+  │   ├── main.tsx                    ← The starting point. This file
+  │   │                                  launches the React application
+  │   │                                  and sets up page routing.
+  │   │
+  │   ├── App.tsx                     ← The main application layout. It
+  │   │                                  defines which pages exist and
+  │   │                                  places the Navbar, Footer, and
+  │   │                                  WhatsApp button on every page.
+  │   │
+  │   ├── index.css                   ← Global styles: color definitions,
+  │   │                                  font settings, and custom
+  │   │                                  animations (orb floating,
+  │   │                                  testimonial sliding, etc.)
+  │   │
+  │   ├── App.css                     ← Additional application styles
+  │   │
+  │   ├── pages/                      ← PAGE COMPONENTS (one file per page)
+  │   │   ├── Home.tsx                   (706 lines — the largest page)
+  │   │   ├── About.tsx                  (277 lines)
+  │   │   ├── Services.tsx               (414 lines)
+  │   │   ├── Portfolio.tsx              (131 lines)
+  │   │   ├── Booking.tsx                (275 lines)
+  │   │   ├── Blog.tsx                   (388 lines)
+  │   │   └── Contact.tsx                (271 lines)
+  │   │
+  │   ├── components/                 ← SHARED COMPONENTS (used on every page)
+  │   │   ├── Navbar.tsx                 Navigation bar at the top
+  │   │   ├── Footer.tsx                 Footer at the bottom
+  │   │   ├── WhatsAppButton.tsx         Floating WhatsApp chat button
+  │   │   └── ui/                     ← 54 pre-built UI components from
+  │   │       ├── button.tsx             shadcn/ui (buttons, dialogs,
+  │   │       ├── card.tsx               cards, forms, tabs, tooltips,
+  │   │       ├── dialog.tsx             carousels, and many more)
+  │   │       ├── sliding-testimonial.tsx  (custom testimonial slider)
+  │   │       └── ... (54 files total)
+  │   │
+  │   ├── hooks/                      ← CUSTOM HOOKS (reusable logic)
+  │   │   ├── useScrollAnimation.ts      Detects when elements scroll
+  │   │   │                              into view and triggers animations
+  │   │   └── use-mobile.ts             Detects if the visitor is on a
+  │   │                                  mobile device
+  │   │
+  │   └── lib/                        ← UTILITY FUNCTIONS
+  │       └── utils.ts                   Helper for combining CSS classes
+  │
+  └── dist/                           ← BUILD OUTPUT (the final optimized
+                                         version ready for the internet)
+
+
+================================================================================
+  7. COLOR PALETTE & DESIGN CHOICES
+================================================================================
+
+  The website uses a carefully curated, professional color palette that
+  reflects the IMPACT GRAPHICS brand identity. Every color was chosen to
+  convey trust, creativity, and professionalism.
+
+  PRIMARY COLORS:
+  ──────────────────────────────────────────────────────────────────────────
+
+  ┌──────────────────┬───────────┬─────────────────────────────────────────┐
+  │ COLOR NAME       │ HEX CODE  │ WHERE IT IS USED & WHY                 │
+  ├──────────────────┼───────────┼─────────────────────────────────────────┤
+  │ Deep Navy Blue   │ #1D3557   │ Main headings, navbar text, footer     │
+  │                  │           │ background. Conveys trust, authority,   │
+  │                  │           │ and professionalism. This is the        │
+  │                  │           │ "anchor" color of the entire brand.     │
+  ├──────────────────┼───────────┼─────────────────────────────────────────┤
+  │ Steel Blue       │ #457B9D   │ Buttons, links, icons, active states.  │
+  │                  │           │ This is the primary action color —      │
+  │                  │           │ it guides visitors to click. It is      │
+  │                  │           │ calming yet professional.               │
+  ├──────────────────┼───────────┼─────────────────────────────────────────┤
+  │ Crimson Red      │ #E63946   │ Accent highlights, promotional cards,  │
+  │                  │           │ section dividers, hover effects on      │
+  │                  │           │ footer links. Creates urgency and       │
+  │                  │           │ draws attention to important elements.  │
+  ├──────────────────┼───────────┼─────────────────────────────────────────┤
+  │ Soft Teal        │ #A8DADC   │ Footer text, newsletter description,   │
+  │                  │           │ category badges. Provides a soft,       │
+  │                  │           │ welcoming contrast to the darker blues. │
+  └──────────────────┴───────────┴─────────────────────────────────────────┘
+
+  NEUTRAL & SUPPORTING COLORS:
+  ──────────────────────────────────────────────────────────────────────────
+
+  ┌──────────────────┬───────────┬─────────────────────────────────────────┐
+  │ COLOR NAME       │ HEX CODE  │ WHERE IT IS USED & WHY                 │
+  ├──────────────────┼───────────┼─────────────────────────────────────────┤
+  │ Slate Gray       │ #4E6178   │ Body text and descriptions. Easy to    │
+  │                  │           │ read without being as harsh as pure     │
+  │                  │           │ black. Creates a softer reading         │
+  │                  │           │ experience.                             │
+  ├──────────────────┼───────────┼─────────────────────────────────────────┤
+  │ Ice Blue Tint    │ #F0F7F9   │ Section backgrounds (alternating       │
+  │                  │           │ sections). Creates visual separation    │
+  │                  │           │ between content areas without using     │
+  │                  │           │ harsh borders.                          │
+  ├──────────────────┼───────────┼─────────────────────────────────────────┤
+  │ Border Gray      │ #D0E1E6   │ Card borders, input field borders,     │
+  │                  │           │ section dividers. Subtle and clean.     │
+  ├──────────────────┼───────────┼─────────────────────────────────────────┤
+  │ Pure White       │ #FFFFFF   │ Card backgrounds, main content areas,  │
+  │                  │           │ button text on dark backgrounds.        │
+  ├──────────────────┼───────────┼─────────────────────────────────────────┤
+  │ Success Green    │ #10B981   │ Checkmarks, success confirmations,     │
+  │                  │           │ feature bullet points. Signals          │
+  │                  │           │ positivity and completion.              │
+  ├──────────────────┼───────────┼─────────────────────────────────────────┤
+  │ WhatsApp Green   │ #25D366   │ WhatsApp button and WhatsApp-related   │
+  │                  │           │ call-to-action buttons. Matches the     │
+  │                  │           │ official WhatsApp brand color.          │
+  └──────────────────┴───────────┴─────────────────────────────────────────┘
+
+  DESIGN PHILOSOPHY:
+  The palette follows a "corporate trust" color scheme. Navy blue and steel
+  blue dominate to establish credibility, while crimson red is used sparingly
+  to draw attention. The light backgrounds ensure content is easy to read,
+  and the alternating white/ice-blue sections create visual rhythm.
+
+
+================================================================================
+  8. TYPOGRAPHY (FONTS)
+================================================================================
+
+  The website uses two professional Google Fonts, each serving a specific
+  purpose:
+
+  POPPINS (Headings & Titles)
+  ────────────────────────────
+  •  Used for: All headings (h1, h2, h3, h4, h5, h6)
+  •  Weights: 400 (Regular), 500 (Medium), 600 (Semi-Bold), 700 (Bold)
+  •  Why: Poppins is a geometric sans-serif font with clean, rounded
+     letterforms. It feels modern and friendly while remaining professional.
+     Its bold weight commands attention in headings without feeling aggressive.
+  •  Example: Section titles like "Our Services", "Our Portfolio", page
+     titles like "About IMPACT GRAPHICS"
+
+  INTER (Body Text & Navigation)
+  ───────────────────────────────
+  •  Used for: Body paragraphs, navigation links, button text, descriptions
+  •  Weights: 300 (Light), 400 (Regular), 500 (Medium), 600 (Semi-Bold),
+     700 (Bold)
+  •  Why: Inter was specifically designed for computer screens. It is
+     extremely legible at small sizes and has excellent spacing between
+     letters, making long paragraphs comfortable to read. It is used by
+     companies like GitHub and Figma.
+  •  Example: Service descriptions, blog article text, form labels
+
+  Both fonts are loaded from Google Fonts using "preconnect" — a technique
+  that tells the browser to start loading the fonts early, so they appear
+  instantly when the page opens (no flash of unstyled text).
+
+
+================================================================================
+  9. DESIGN STRUCTURE & LAYOUT
+================================================================================
+
+  The website follows a modern "single-page application" (SPA) design
+  pattern. This means:
+
+  •  There is one HTML file (index.html) that acts as the "shell"
+  •  React dynamically swaps the content inside this shell when the
+     visitor navigates between pages
+  •  This makes page transitions feel instant — there is no white screen
+     or loading between pages
+
+  LAYOUT PATTERN (Every Page):
+  ──────────────────────────────
+    ┌─────────────────────────────────────────┐
+    │            NAVIGATION BAR               │  ← Fixed at top, 72px tall
+    │   Logo    Links    Quote Button   WhatsApp │
+    ├─────────────────────────────────────────┤
+    │                                         │
+    │           HERO BANNER                   │  ← Full-width, gradient
+    │      Page Title + Description           │     overlay on background
+    │                                         │     image
+    ├─────────────────────────────────────────┤
+    │                                         │
+    │         CONTENT SECTIONS                │  ← Alternating white and
+    │    (alternating backgrounds)            │     ice-blue backgrounds
+    │                                         │
+    │    Section 1 (white background)         │
+    │    Section 2 (ice-blue background)      │
+    │    Section 3 (white background)         │
+    │    ...                                  │
+    │                                         │
+    ├─────────────────────────────────────────┤
+    │         CALL-TO-ACTION SECTION          │  ← Gradient background
+    │      "Ready to Transform Your Brand?"   │     (navy to steel blue)
+    ├─────────────────────────────────────────┤
+    │                                         │
+    │              FOOTER                     │  ← Navy blue background
+    │   Logo  |  Links  |  Services  |  Contact │
+    │         Copyright + Social Icons        │
+    └─────────────────────────────────────────┘
+                              [WhatsApp]       ← Floating button
+                               (bottom-right)     on every page
+
+  CONTENT WIDTH:
+  All content is contained within a maximum width of 1200 pixels, centered
+  on the screen. This ensures the content looks good on both large monitors
+  and smaller screens without feeling stretched or cramped.
+
+  GRID SYSTEM:
+  Content is organized using CSS Grid, which creates structured layouts:
+  •  Services: 4 columns on desktop → 2 columns on tablet → 1 on mobile
+  •  Portfolio: 3 columns on desktop → 2 columns on tablet → 1 on mobile
+  •  Blog: 3 columns on desktop → 2 columns on tablet → 1 on mobile
+  •  Stats: 4 columns on desktop → 2 columns on smaller screens
+
+
+================================================================================
+  10. KEY FEATURES & FUNCTIONALITY
+================================================================================
+
+  A. ANIMATED STATISTICS COUNTER
+  ─────────────────────────────────
+  On the Home page and About page, key business statistics (10+ Years,
+  500+ Projects, 200+ Clients, 98% Satisfaction) are displayed with an
+  animated counting effect. When the visitor scrolls to this section, the
+  numbers animate from 0 up to their final value over 2.5 seconds. This
+  creates an engaging, impressive visual effect that catches attention.
+
+  The animation only triggers once (the first time the section comes into
+  view) and does not repeat on subsequent scrolls — this is intentional
+  to avoid annoying the visitor.
+
+  B. PORTFOLIO FILTERING SYSTEM
+  ─────────────────────────────────
+  The Portfolio page features category filter buttons: All, Branding,
+  Printing, Signage, Digital Design, Photography, and Events. When a
+  visitor clicks a category, only projects matching that category are
+  displayed. The active filter button changes color to indicate which
+  filter is selected. This makes it easy for potential clients to find
+  relevant work samples.
+
+  C. BLOG ARTICLE READER (MODAL DIALOG)
+  ─────────────────────────────────────────
+  When a visitor clicks "Read More" on a blog post, instead of navigating
+  to a new page, a large overlay window (modal dialog) appears with the
+  full article. This dialog features:
+  •  The article image on the left side
+  •  The full article text on the right side (scrollable)
+  •  Category badge, reading time, and publication date
+  •  A close button to return to the blog listing
+  This approach keeps the visitor on the same page and feels modern and
+  premium — similar to how Medium or LinkedIn displays articles.
+
+  D. BOOKING FORM WITH WHATSAPP SUBMISSION
+  ──────────────────────────────────────────
+  The booking form collects: Full Name, Phone Number, Service Required,
+  Budget Range, Preferred Deadline, and Project Description. When submitted,
+  it composes a formatted WhatsApp message with all the details and opens
+  WhatsApp (either the app or web version) with the message pre-filled,
+  ready to send to IMPACT GRAPHICS' number (+237 6 55 31 65 06).
+
+  This is significant because:
+  •  No backend server or database is needed to process form submissions
+  •  The business receives inquiries directly on WhatsApp, which they
+     already use daily
+  •  Response time is faster since WhatsApp messages are seen immediately
+  •  It works perfectly in the Cameroon market where WhatsApp is the
+     dominant communication platform
+
+  E. BRANDING PACKAGES WITH PRICING
+  ────────────────────────────────────
+  The Services page features 3 tiered pricing packages:
+  •  Basic (XAF 150,000) — for startups and small businesses
+  •  Professional (XAF 500,000) — for growing businesses (marked as
+     "Most Popular" with highlighted styling)
+  •  Enterprise (XAF 1,500,000) — full-service branding solution
+  Each package lists specific deliverables with checkmarks.
+
+  F. CURRENT PROMOTIONS WITH PROMO CODES
+  ─────────────────────────────────────────
+  The Home page features 3 active promotional offers:
+  •  10% Off Business Card Printing (Code: CARDS10, expires June 30, 2026)
+  •  Free Brand Consultation (Code: FREECONSL, expires July 15, 2026)
+  •  Referral Rewards Program (Code: REFER15, ongoing)
+  Each promotion links to the booking page for easy redemption.
+
+  G. CLIENT TESTIMONIAL SLIDER
+  ──────────────────────────────
+  A custom-built, infinitely scrolling testimonial carousel displays
+  6 client reviews with their photos, names, company roles, and 5-star
+  ratings. The carousel scrolls automatically and continuously, pausing
+  when the visitor hovers over it. It uses a gradient mask on the edges
+  for a polished fade-in/fade-out effect.
+
+  H. NEWSLETTER / BRANDING CHECKLIST VIA WHATSAPP
+  ──────────────────────────────────────────────────
+  Instead of a traditional email newsletter, the website offers a "Free
+  Branding Checklist" delivered via WhatsApp. Visitors enter their name
+  and phone number, and the form opens WhatsApp with a pre-composed
+  request message. This is tailored to the local market where email
+  is less commonly used than WhatsApp.
+
+
+================================================================================
+  11. ANIMATIONS & INTERACTIVE ELEMENTS
+================================================================================
+
+  The website uses various animations to create a dynamic, engaging
+  experience:
+
+  A. SCROLL-TRIGGERED ANIMATIONS
+  ────────────────────────────────
+  When visitors scroll down the page, content sections animate into view:
+  •  Sections slide up from below (translate-y animation)
+  •  Side-by-side content slides in from left and right
+  •  Content fades from transparent to visible (opacity animation)
+  •  Staggered delays make items appear one after another
+  These are powered by a custom "useScrollAnimation" hook that uses the
+  browser's Intersection Observer API — a modern, battery-efficient way
+  to detect when elements become visible on screen.
+
+  B. MOUSE-FOLLOWING GRADIENT ORBS (HOME PAGE HERO)
+  ───────────────────────────────────────────────────
+  On the Home page hero section, large colorful gradient orbs follow
+  the visitor's mouse cursor. These orbs are blurred circles in blue,
+  teal, and amber that create a soft, atmospheric lighting effect. The
+  orbs appear smoothly when the mouse enters the section and disappear
+  when it leaves. This creates a "wow" moment on first visit.
+
+  C. HOVER EFFECTS
+  ──────────────────
+  •  Service cards: Shadow increases and border color changes on hover
+  •  Portfolio images: Slight zoom (scale 1.05) with overlay appearing
+  •  Navigation links: Color transitions smoothly
+  •  Buttons: Background color shifts smoothly
+  •  Footer social icons: Background fills with brand color
+  •  Core value cards: Float upward slightly on hover
+  •  Value icons: Rotate 10 degrees on hover
+  •  Service icons: Scale up (grow larger) on hover
+
+  D. WHATSAPP BUTTON PULSE
+  ──────────────────────────
+  The floating WhatsApp button has a continuous green pulse animation
+  that draws attention without being intrusive. It also scales up
+  slightly on hover.
+
+  E. TESTIMONIAL AUTO-SCROLL
+  ────────────────────────────
+  The testimonial section scrolls horizontally at a constant speed,
+  taking 30 seconds for a full cycle. It pauses when hovered and uses
+  edge-fading masks for a polished look.
+
+  F. NAVBAR TRANSPARENCY EFFECT
+  ───────────────────────────────
+  On the Home page, the navigation bar starts as completely transparent
+  (so the hero section feels immersive). As the visitor scrolls down
+  past 50 pixels, the navbar smoothly transitions to a white background
+  with a subtle glass blur effect ("backdrop-blur"). On all other pages,
+  the navbar is always white since they have colored hero sections.
+
+
+================================================================================
+  12. WHATSAPP INTEGRATION
+================================================================================
+
+  WhatsApp is deeply integrated throughout the website because it is the
+  most widely used messaging platform in Cameroon and Central Africa.
+  Rather than relying on email (which many local clients check infrequently),
+  the website channels all communication through WhatsApp:
+
+  WHERE WHATSAPP APPEARS:
+  •  Floating button (bottom-right of every page)
+  •  Navbar WhatsApp icon (desktop navigation)
+  •  Booking form submission → opens WhatsApp with pre-filled message
+  •  Contact form submission → opens WhatsApp with pre-filled message
+  •  Newsletter/checklist form → opens WhatsApp with pre-filled message
+  •  "Chat on WhatsApp" button in the final call-to-action section
+  •  Footer WhatsApp social icon
+
+  HOW IT WORKS:
+  All WhatsApp links use the "wa.me" deep-link format:
+    https://wa.me/237655316506?text=[pre-filled message]
+
+  This link:
+  •  Opens WhatsApp (mobile app or WhatsApp Web on desktop)
+  •  Pre-selects the company's phone number (+237 6 55 31 65 06)
+  •  Pre-fills the message with all form data (name, service, budget, etc.)
+  •  The visitor only needs to press "Send" — no typing required
+
+  This approach requires NO backend server, NO database, and NO paid
+  messaging service. It is free, instant, and perfectly suited to the
+  local market.
+
+
+================================================================================
+  13. SEARCH ENGINE OPTIMIZATION (SEO)
+================================================================================
+
+  The website is optimized to appear in Google search results:
+
+  •  TITLE TAG: "IMPACT GRAPHICS & SON SARL | Creative Branding Agency"
+     This appears in browser tabs and Google search results.
+
+  •  META DESCRIPTION: "Premium branding, graphic design, printing,
+     digital marketing, and visual communication services in Douala,
+     Cameroon." This appears under the title in Google search results.
+
+  •  SEMANTIC HTML: The website uses proper HTML structure with correct
+     heading hierarchy (h1 → h2 → h3), which helps Google understand the
+     content structure.
+
+  •  LAZY LOADING IMAGES: Images load only when they scroll into view
+     (using loading="lazy"), which speeds up the initial page load.
+
+  •  FAST LOADING: The Vite build tool compresses and optimizes all code,
+     and Vercel serves it from global servers close to the visitor.
+
+  •  CUSTOM FAVICON: The company logo appears as the small icon in the
+     browser tab, reinforcing brand recognition.
+
+
+================================================================================
+  14. RESPONSIVE DESIGN (MOBILE, TABLET, DESKTOP)
+================================================================================
+
+  The website is fully responsive, meaning it automatically adjusts its
+  layout to look perfect on any screen size:
+
+  DESKTOP (1024px and above):
+  •  Full navigation bar with all links visible
+  •  Content arranged in multi-column grids (3-4 columns)
+  •  Side-by-side text and image layouts
+  •  Full-width hero sections with large typography
+
+  TABLET (768px to 1023px):
+  •  Navigation may show hamburger menu
+  •  Grids reduce to 2 columns
+  •  Images and text may stack vertically
+
+  MOBILE (below 768px):
+  •  Hamburger menu replaces the navigation links
+  •  All content stacks into a single column
+  •  Typography sizes reduce for readability
+  •  Buttons become full-width for easy tapping
+  •  Touch-friendly spacing between interactive elements
+  •  WhatsApp button positioned safely with "safe area" padding
+    (accounting for phone notches and rounded corners)
+
+  The responsive behavior is handled by Tailwind CSS breakpoint prefixes:
+  •  "sm:" applies at 640px and above
+  •  "md:" applies at 768px and above
+  •  "lg:" applies at 1024px and above
+  •  "xl:" applies at 1280px and above
+
+
+================================================================================
+  15. DEPLOYMENT & HOSTING
+================================================================================
+
+  The website is deployed (published) on Vercel, a professional cloud
+  hosting platform. Here is how the deployment pipeline works:
+
+  1. The developer writes and tests code locally on their computer
+  2. The code is pushed to a Git repository (version control)
+  3. Vercel automatically detects the new code and builds the website
+  4. The built website is distributed to Vercel's global network of
+     servers (data centers around the world)
+  5. When a visitor anywhere in the world opens the website, they are
+     served from the server closest to them — this means fast loading
+     whether the visitor is in Douala, Paris, or New York
+
+  The vercel.json configuration file contains a "rewrite" rule that
+  ensures all URL paths (like /about, /services, /portfolio) are handled
+  by the single index.html file. This is necessary because the website
+  is a "single-page application" — all routing is handled by React in
+  the browser, not by the server.
+
+  Security: The website is served over HTTPS (the padlock icon in the
+  browser), which encrypts all data between the visitor's browser and
+  the server. This is provided automatically by Vercel at no extra cost.
+
+
+================================================================================
+  16. IMAGE ASSETS
+================================================================================
+
+  The website uses 53 images, all stored in the public/images/ folder.
+  These are organized by purpose:
+
+  LOGO:
+  •  logo.png — The IMPACT GRAPHICS & SON SARL company logo
+
+  HERO IMAGES (Page Banners):
+  •  hero_about-us.jpg
+  •  hero_our-services.png
+  •  hero_portfolio.jpg
+  •  hero_blog.jpg
+  •  hero_contact us.jpg
+  •  hero_Book-service.jpg
+  •  hero-collage-1.jpg through hero-collage-6.jpg (Home page collage)
+
+  SERVICE IMAGES (13 images):
+  •  One image per service (service-branding.jpg, service-printing.jpg,
+     service-web-design.jpg, service-photography.jpg, etc.)
+
+  PORTFOLIO IMAGES (10 images):
+  •  Images showcasing past projects across categories (branding, printing,
+     signage, digital design, photography, events)
+
+  BLOG ARTICLE IMAGES (6 images):
+  •  One cover image per blog article (blog-1.jpg through blog-6.jpg)
+
+  "WHY CHOOSE US" IMAGES (4 images):
+  •  why-us-1.jpg through why-us-4.jpg
+
+  TEAM/TESTIMONIAL PHOTOS (6 images):
+  •  Photos of clients who provided testimonials (Herman Buns, Wilfried
+     Bradd, Mr. Nature, Joseph Elyse', Mme. Sharifa, Mme. Kajal Moussa)
+
+  ABOUT PAGE:
+  •  about-story.jpg — Used in the company story section
+
+
+================================================================================
+  17. REUSABLE UI COMPONENT LIBRARY
+================================================================================
+
+  The website includes 54 pre-built user interface (UI) components from
+  the shadcn/ui library. While not all 54 are actively used on the current
+  pages, they are available for future expansion. This means new pages or
+  features can be added quickly without designing new components.
+
+  ACTIVELY USED COMPONENTS:
+  •  Dialog — Powers the blog article reader modal
+  •  Button — Used throughout for consistent button styling
+  •  Card — Used for service cards, testimonial cards
+  •  Carousel — Available for future image galleries
+
+  AVAILABLE FOR FUTURE USE:
+  •  Accordion (expandable FAQ sections)
+  •  Tabs (tabbed content areas)
+  •  Calendar / Date Picker (for scheduling)
+  •  Table (for pricing comparisons)
+  •  Form components (checkbox, radio, select, switch, slider)
+  •  Navigation Menu (for complex dropdown menus)
+  •  Sidebar (for dashboard-style layouts)
+  •  Tooltip (for helpful hover hints)
+  •  Progress bar (for loading indicators)
+  •  And 40+ more...
+
+  This component library represents a significant investment in the
+  website's future scalability. Adding new features like an FAQ page,
+  a client dashboard, or an appointment scheduler would be much faster
+  because the building blocks are already in place.
+
+
+================================================================================
+  18. IMPORTANT NOTES
+================================================================================
+
+  1. NO BACKEND SERVER OR DATABASE
+     This website is a "static" front-end application. It does not have
+     a backend server or database. All form submissions go directly to
+     WhatsApp. This means:
+     •  No server hosting costs
+     •  No database maintenance required
+     •  No risk of server downtime affecting the website
+     •  The website loads extremely fast
+     If in the future a backend is needed (e.g., for a client portal,
+     appointment booking system, or e-commerce), one can be added without
+     rebuilding the front-end.
+
+  2. ALL CONTENT IS HARD-CODED
+     Blog articles, service listings, portfolio items, testimonials, and
+     pricing are written directly in the code. To update them, a developer
+     needs to edit the relevant file, rebuild, and redeploy. In the future,
+     a content management system (CMS) like Strapi or Sanity could be
+     integrated to allow non-technical staff to update content.
+
+  3. PRICING IS IN XAF (CFA FRANC)
+     All prices are displayed in the local currency (XAF / CFA Franc),
+     appropriate for the Cameroon market.
+
+  4. BILINGUAL CONSIDERATION
+     The current website is in English. If a French version is needed
+     (Cameroon is bilingual), internationalization (i18n) can be added
+     to support multiple languages without rebuilding the site.
+
+  5. PERFORMANCE
+     The website is built for speed:
+     •  Lazy loading of images (only loads when scrolled into view)
+     •  Optimized build output (minified and compressed code)
+     •  Global CDN delivery via Vercel
+     •  Efficient CSS with Tailwind (only includes used styles)
+     •  Modern React 19 with improved rendering performance
+
+  6. BROWSER COMPATIBILITY
+     The website works on all modern browsers:
+     •  Google Chrome (desktop and mobile)
+     •  Mozilla Firefox
+     •  Apple Safari (desktop and iOS)
+     •  Microsoft Edge
+     •  Samsung Internet
+     •  Opera
+     Autoprefixer automatically adds vendor-specific CSS rules to ensure
+     compatibility.
+
+  7. ACCESSIBILITY
+     The Radix UI components (used under the hood by shadcn/ui) follow
+     WAI-ARIA accessibility standards, meaning the website is usable
+     by people with disabilities using screen readers and keyboard
+     navigation.
+
+  8. VERSION CONTROL
+     The project uses Git for version control (the .git folder). This
+     means every change to the code is tracked, can be reviewed, and
+     can be rolled back if needed. It is like having an "undo" history
+     for the entire project.
+
+  9. CODE QUALITY
+     ESLint is configured to enforce consistent coding standards. This
+     means the code is clean, well-organized, and easier for any
+     developer to understand and maintain in the future.
+
+  10. FUTURE-PROOF ARCHITECTURE
+      The project is built with modern technologies (React 19, Vite 7,
+      TypeScript 5.9) that are actively maintained and will receive
+      updates for years to come. The component-based architecture makes
+      it easy to add new pages, features, or redesign sections without
+      affecting the rest of the website.
+
+
+================================================================================
+  19. GLOSSARY OF TECHNICAL TERMS
+================================================================================
+
+  For reference, here are plain-language definitions of technical terms
+  used throughout this document:
+
+  API (Application Programming Interface)
+    A set of rules that allows different software programs to communicate
+    with each other. Like a waiter who takes your order (request) to the
+    kitchen (server) and brings back your food (response).
+
+  BACKEND
+    The behind-the-scenes part of a website that users do not see. It
+    handles data storage, business logic, and server communication. This
+    project does not have a backend.
+
+  BUILD
+    The process of converting raw code into an optimized, compressed
+    version ready for the internet. Like compiling a book manuscript
+    into a printed, bound book.
+
+  CDN (Content Delivery Network)
+    A network of servers around the world that stores copies of the
+    website. When someone visits the site, they get the copy from the
+    server closest to them, making it load faster.
+
+  CMS (Content Management System)
+    A tool that allows non-technical people to update website content
+    (text, images, blog posts) without writing code. Like WordPress,
+    but more modern.
+
+  COMPONENT
+    A self-contained, reusable piece of the website. For example, the
+    Navbar is a component — it is built once and appears on every page.
+    Like a LEGO brick that can be placed anywhere.
+
+  CSS (Cascading Style Sheets)
+    The language that controls how a website looks — colors, fonts, sizes,
+    spacing, and layouts. If HTML is the skeleton, CSS is the skin and
+    clothing.
+
+  DEPLOYMENT
+    The process of putting the website on the internet so the public can
+    access it. Like opening the doors to a new store.
+
+  FRAMEWORK
+    A pre-built foundation of tools and patterns that developers use to
+    build applications faster. Like using a house blueprint instead of
+    designing every wall from scratch.
+
+  FRONTEND
+    The part of the website that visitors see and interact with —
+    everything you see in the browser. This entire project is a
+    frontend application.
+
+  GIT
+    A version control system that tracks every change to the code.
+    Like having a detailed logbook of every edit ever made, with the
+    ability to go back to any previous version.
+
+  HTML (HyperText Markup Language)
+    The language that defines the structure and content of a web page.
+    It is the skeleton of every website — headings, paragraphs, images,
+    links, and forms are all defined in HTML.
+
+  HOSTING
+    The service that stores the website files on a server connected to
+    the internet, making it accessible to visitors worldwide.
+
+  HTTPS
+    A secure version of HTTP (the protocol used to load websites).
+    The "S" stands for "Secure." It encrypts data between the visitor
+    and the server, shown by the padlock icon in the browser.
+
+  LAZY LOADING
+    A technique where images and content only load when the visitor
+    scrolls to them, rather than loading everything at once. This makes
+    the initial page load much faster.
+
+  MODAL / DIALOG
+    A window that appears on top of the page content, dimming the
+    background. Used on the Blog page to display full articles without
+    navigating away.
+
+  RESPONSIVE DESIGN
+    A design approach where the website automatically adjusts its layout
+    to look good on any screen size — from a small phone to a large
+    desktop monitor.
+
+  ROUTING
+    The system that determines which page content to display based on
+    the URL. When you type "/about" in the address bar, the router
+    shows the About page.
+
+  SPA (Single-Page Application)
+    A website that loads one HTML page and dynamically updates the
+    content as the user navigates, instead of loading entirely new
+    pages from the server. This makes navigation feel instant.
+
+  UI (User Interface)
+    Everything the visitor sees and interacts with on screen — buttons,
+    menus, forms, images, text, and animations.
+
+  URL (Uniform Resource Locator)
+    The web address typed into the browser to visit a page. For example:
+    https://impactgraphics.com/services
+
+  UTILITY CLASS
+    In Tailwind CSS, a small, single-purpose CSS class like "text-white"
+    (makes text white) or "rounded-lg" (adds rounded corners). Hundreds
+    of these classes are combined to style elements.
+
+
+================================================================================
+                         END OF PROJECT OVERVIEW
+================================================================================
+
+  This document provides a complete overview of the IMPACT GRAPHICS & SON
+  SARL website project. It covers every aspect of the project from the
+  technologies used and the reasons behind those choices, to the design
+  decisions, features, animations, and deployment strategy.
+
+  For any questions about this document or the project itself, please
+  contact the development team.
+
+  © 2026 IMPACT GRAPHICS & SON SARL. All rights reserved.
+
+================================================================================
