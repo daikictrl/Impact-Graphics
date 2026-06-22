@@ -249,6 +249,49 @@ function StatsSection() {
   )
 }
 
+/* ─── Client Logos Marquee Section ─── */
+function ClientLogosMarquee() {
+  const clientImages = Array.from({ length: 19 }, (_, i) => `/images/clients (${i + 1}).jpeg`)
+  // Duplicate the array to make the marquee infinite and seamless
+  const duplicatedClients = [...clientImages, ...clientImages]
+
+  return (
+    <section className="bg-white py-12 border-b border-[#D0E1E6]/30 overflow-hidden">
+      <div className="max-w-[1200px] mx-auto px-6 lg:px-12 text-center mb-6">
+        <p className="text-xs uppercase tracking-widest text-[#457B9D] font-bold">
+          Trusted by Leading Businesses & Satisfied Clients
+        </p>
+      </div>
+      <div
+        style={{
+          maskImage: 'linear-gradient(to right, transparent, black 10%, black 90%, transparent)',
+          WebkitMaskImage: 'linear-gradient(to right, transparent, black 10%, black 90%, transparent)',
+        }}
+        className="flex relative overflow-hidden shrink-0 max-w-full"
+      >
+        <div className="flex animate-x-slider gap-6 w-max py-2">
+          {duplicatedClients.map((src, index) => (
+            <div
+              key={index}
+              className="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl bg-white border border-[#D0E1E6]/40 p-3 flex items-center justify-center shadow-sm hover:shadow-md hover:scale-105 transition-all duration-300 shrink-0 overflow-hidden group cursor-pointer"
+            >
+              <img
+                src={src}
+                alt={`Satisfied Client Logo ${index % 19 + 1}`}
+                className="w-full h-full object-contain rounded-xl select-none pointer-events-none grayscale opacity-50 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300"
+                loading="lazy"
+                onError={(e) => {
+                  e.currentTarget.style.display = 'none';
+                }}
+              />
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  )
+}
+
 /* ─── Services Section ─── */
 function ServicesSection() {
   const { ref, isVisible } = useScrollAnimation()
@@ -693,6 +736,7 @@ export default function Home() {
     <>
       <HeroSection />
       <StatsSection />
+      <ClientLogosMarquee />
       <ServicesSection />
       <WhyChooseSection />
       <PortfolioPreview />

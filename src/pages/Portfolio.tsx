@@ -119,12 +119,61 @@ function PortfolioGallery() {
   )
 }
 
+/* ─── Trusted Clients Section ─── */
+function TrustedClientsSection() {
+  const { ref, isVisible } = useScrollAnimation()
+  const clientImages = Array.from({ length: 19 }, (_, i) => `/images/clients (${i + 1}).jpeg`)
+
+  return (
+    <section ref={ref} className="bg-[#F0F7F9] py-24 border-t border-[#D0E1E6]/30">
+      <div className="max-w-[1200px] mx-auto px-6 lg:px-12">
+        <div className="text-center mb-16">
+          <h2
+            className="text-3xl sm:text-4xl font-bold text-[#1D3557] mb-4"
+            style={{ fontFamily: 'Poppins, sans-serif' }}
+          >
+            Clients We've Satisfied
+          </h2>
+          <div className="w-12 h-[3px] bg-[#E63946] mx-auto mb-4" />
+          <p className="text-[#4E6178] max-w-xl mx-auto">
+            We've had the pleasure of partnering with outstanding businesses and organizations to deliver custom branding, printing, and design services.
+          </p>
+        </div>
+
+        <div
+          className={`grid grid-cols-2 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-6 transition-all duration-700 ${
+            isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
+          }`}
+        >
+          {clientImages.map((src, index) => (
+            <div
+              key={index}
+              className="bg-white border border-[#D0E1E6]/30 p-4 rounded-2xl flex items-center justify-center aspect-square shadow-sm hover:shadow-md hover:scale-105 transition-all duration-300 group cursor-pointer"
+            >
+              <img
+                src={src}
+                alt={`Satisfied Client Brand ${index + 1}`}
+                className="w-full h-full object-contain rounded-xl select-none pointer-events-none"
+                loading="lazy"
+                onError={(e) => {
+                  e.currentTarget.style.display = 'none';
+                }}
+              />
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  )
+}
+
 /* ─── Portfolio Page ─── */
 export default function Portfolio() {
   return (
     <>
       <PageHero />
       <PortfolioGallery />
+      <TrustedClientsSection />
     </>
   )
 }
