@@ -7,7 +7,10 @@ import {
   Clock,
   Send,
   Check,
+  Loader2,
 } from 'lucide-react'
+import { supabase } from '../lib/supabase'
+import { toast } from 'sonner'
 
 /* ─── Page Hero ─── */
 function PageHero() {
@@ -71,17 +74,44 @@ function BookingForm() {
     description: '',
   })
   const [submitted, setSubmitted] = useState(false)
+  const [isSubmitting, setIsSubmitting] = useState(false)
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value })
   }
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    const message = `Hello IMPACT GRAPHICS, I would like to request a quote.\n\nName: ${formData.fullName}\nService: ${formData.service}\nPhone: ${formData.phone}\nBudget: ${formData.budget}\nDeadline: ${formData.deadline}\nDescription: ${formData.description}`
-    const encoded = encodeURIComponent(message)
-    window.open(`https://wa.me/237655316506?text=${encoded}`, '_blank')
-    setSubmitted(true)
+    setIsSubmitting(true)
+
+    try {
+      const { error } = await supabase.from('bookings').insert([
+        {
+          full_name: formData.fullName,
+          phone: formData.phone,
+          service: formData.service,
+          budget: formData.budget || null,
+          deadline: formData.deadline || null,
+          description: formData.description,
+        },
+      ])
+
+      if (error) {
+        throw error
+      }
+
+      toast.success('Booking saved successfully!')
+
+      const message = `Hello IMPACT GRAPHICS, I would like to request a quote.\n\nName: ${formData.fullName}\nService: ${formData.service}\nPhone: ${formData.phone}\nBudget: ${formData.budget}\nDeadline: ${formData.deadline}\nDescription: ${formData.description}`
+      const encoded = encodeURIComponent(message)
+      window.open(`https://wa.me/237655316506?text=${encoded}`, '_blank')
+      setSubmitted(true)
+    } catch (error: any) {
+      console.error('Error submitting booking:', error)
+      toast.error(error.message || 'Failed to submit booking. Please try again.')
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   return (
@@ -209,9 +239,18 @@ function BookingForm() {
 
                 <button
                   type="submit"
-                  className="w-full bg-[#457B9D] text-white py-4 rounded-lg font-semibold hover:bg-[#1D3557] transition-colors duration-200 flex items-center justify-center gap-2"
+                  disabled={isSubmitting}
+                  className="w-full bg-[#457B9D] text-white py-4 rounded-lg font-semibold hover:bg-[#1D3557] transition-colors duration-200 flex items-center justify-center gap-2 disabled:opacity-75 disabled:cursor-not-allowed"
                 >
-                  <Send size={18} /> Send Booking Request
+                  {isSubmitting ? (
+                    <>
+                      <Loader2 size={18} className="animate-spin" /> Submitting...
+                    </>
+                  ) : (
+                    <>
+                      <Send size={18} /> Send Booking Request
+                    </>
+                  )}
                 </button>
               </form>
             )}
